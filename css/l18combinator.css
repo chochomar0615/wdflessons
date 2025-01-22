@@ -1,0 +1,152 @@
+/*Tag to Tag*/
+/*div span  // space in between in div&span are called relationship */
+
+/*
+div span{
+	color: red ;
+}*/
+
+
+/*Multi Tag to Tag*/
+/*div span p{
+	color: blue;
+}*/
+
+
+/*Tag to Class*/
+/*div .address{
+	color:red;
+}*/
+
+
+/*	This will include in Multi Tag  to Same Class */
+/*div span b.address{
+	color : yellow;
+}
+*/
+
+
+/*MultiTags to Class*/
+/*
+div span .address{
+	color:violet;
+}
+*/
+
+
+/*Multi Tag to Same Class*/
+/*div span samll.name  // sametag,sameclass */
+
+div span small.name{
+	color: blue;
+}
+
+
+/*Class to Class*/
+/*.bank .money{
+	color:red;
+}*/
+
+.bank .currency{
+	color:red;
+}
+
+/*.money .currency{
+	color:red;
+}*/
+
+/*.bank .money .currency{
+	color:red;
+}
+*/
+
+/*Class to Tag*/
+/*
+.container b{
+	color:red;
+}*/
+
+
+/*Class to Multi Tags*/
+/*.container b span{
+	color: red;
+}*/
+
+
+/*Same Class*/
+.mobile.jpn{
+	color:red;
+}
+
+/*.mobile.korea{
+	color:red;
+}
+
+.mobile.cn{
+	color:red;
+}
+
+.mobile.us{
+	color:red;
+}*/
+
+/*Class to Same Class*/
+
+.vehicle .car.jp{
+	color:green;
+}
+
+.vehicle .car.ka{
+	color:green;
+}
+
+
+/* Class to Tag with Group Selector  */
+.div1 p,.div1 b{
+	color:red;
+}
+
+
+/*Child Selector (>)*/
+/*.div2 > p{
+	color : blue;
+}*/
+
+/*.div2 > b{
+	color:blue;
+}
+*/
+
+/*.div2 > i{
+	color:blue;
+}*/
+
+/*.div2 > .div3{
+	color: blue;
+}*/
+
+/*.div3 > b{
+	color:blue;
+}*/
+
+
+
+
+/*	(i)General Sibling Selector (~) */
+
+.div4 ~ p{
+	color:red;
+}
+
+
+/*(ii)Adjcent Sibling Selector (+)*/
+.div7 + p{
+	color:red;
+}
+
+.div9 + b{
+	color:green;
+}
+
+/* 27CB */
+/*28CH*/

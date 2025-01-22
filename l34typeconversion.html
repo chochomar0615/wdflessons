@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Type Conversion</title>
+</head>
+<body>
+
+
+ 	<script type="text/javascript">
+
+ 		//String (character array //only js)
+
+ 		let val;
+ 		val="aung aung"
+
+
+ 		console.log(val);
+ 		console.log(typeof val); // string
+ 		console.log(val.length); // 9 => method of array
+
+ 		//Number to String
+
+ 		val = "20";
+ 		val = '20';
+ 		val = `20`;
+ 		val = String(20);
+
+ 		console.log(val);
+ 		console.log(typeof val); //string 
+ 		console.log(val.length); //2
+
+ 		//Boolean to String
+
+ 		val = true;
+ 		val = String(true);
+
+ 		console.log(val);
+ 		console.log(typeof val); //string
+ 		console.log(val.length);
+
+ 		//Object to String
+
+ 		val = new Date();
+ 		val = String(new Date());
+
+ 		console.log(val); //Tue Sep 24 2024 20:16:39 GMT+0630 (Myanmar Time)
+ 		console.log(typeof val); //string
+ 		console.log(val.length); //48
+
+ 		//Array to String
+
+ 		val = [1,2,3,4,5];
+ 		val = String([1,2,3,4,5]);
+
+ 		console.log(val); //1,2,3,4,5
+ 		console.log(typeof val);//string
+ 		console.log(val.length);//9
+
+ 		//-------------------------------------------------------------------
+
+ 		//String to Number
+
+ 		val = "aung aung";
+ 		//val = Number("aung aung");//NaN (Not A Num)
+
+ 			//Another method of changer to num => +val
+
+ 			val = "20";
+ 			val = +"20";
+
+
+ 		console.log(val);
+ 		console.log(typeof val);
+
+ 		val1 = `20`;
+ 		val2 = +val1;
+ 		lav = 300+val2;
+
+ 		console.log(val1); //string
+ 		console.log(typeof val2); //numbers
+ 		console.log(lav);
+
+ 		window.alert("Hello");
+ 		prompt("Enter First Num");
+
+ 		val = prompt("Enter First Num");
+ 		val = +val;
+ 		console.log(val); // 20
+ 		console.log(typeof val); //number
+
+
+ 		//Not a Number
+
+ 		val = Number("aung aung");
+ 		val = +"aung aung";
+ 		val = Number([1,2,3,4,5]);
+
+ 		val = 10 + "33.33";
+ 		val = 10 + +"33.33";
+
+ 		console.log(val);
+ 		console.log(typeof val);
+
+
+ 		//take decimal place
+
+ 		val = 123.456789;
+ 		console.log(val); //123.456789
+ 		console.log(typeof val); 
+ 		console.log(val.toFixed(3)); //123.457
+
+ 		val = 123;
+ 		console.log(val); //123
+ 		console.log(val.toFixed(2)); //123.00
+ 		console.log(typeof val);
+
+
+ 		// *********String to Number
+ 		val = "50.325";
+ 		val = Number("50.32");
+ 		val = parseInt(val);
+ 		//val = parseFloat("50.32"); //console.log(val.toFixed(2)); //50.33
+
+ 		console.log(val);
+ 		console.log(typeof val);
+ 		console.log(val.toFixed(2));
+
+ 		//Boolean to Number
+
+ 		val = true;
+ 		val = Number(true); //1
+ 		val = +false; //0
+
+ 		console.log(val);
+ 		console.log(typeof val);
+
+
+ 		//String to Array
+
+ 		val = "Ma Cho Cho Mar";
+ 		val = Array.from(val);
+
+		console.log(val);//['M', 'a', ' ', 'C', 'h', 'o', ' ', 'C', 'h', 'o', ' ', 'M', 'a', 'r']
+ 		console.log(typeof val); //object
+ 		console.log(val.length); //14
+
+
+ 		Note: number,boolean,object cannot convert to array
+
+ //=>number
+ 		val = 50;
+ 		val = Array.from(val);
+
+//=>boolean
+ 		val = true;
+ 		val = Array.from(val);
+
+//=>object
+ 		val =new Date();
+
+ 		val = {
+ 			music:"rock",
+ 			name: "hello"
+ 		}
+
+ 		console.log(val);
+ 		console.log(typeof val);
+
+
+
+//24TV
+
+
+ 	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template String</title>
+</head>
+<body>
+
+	<ul>
+		<li>Name : Aung Aung</li>
+		<li>Age : 24</li>
+		<li>Job : Web Developer</li>
+		<li>City : Mandalay</li>
+	</ul>
+
+
+	<script type="text/javascript">
+
+
+		//var fullname;
+		//let fullname;
+		//const fullname; //error cuz of overrite
+		//console.log(fullname);
+
+		const name="Cho Cho Mar";
+		const age=24;
+		const job="Project Manager of Software Enginnering";
+		const city="Mandalay";
+
+		document.write(name);
+		document.write(age);
+		document.write(job);
+		document.write(city);
+
+
+		let myliststyle;
+		//console.log(myliststyle);
+
+		//myliststyle="<h1>Hello World</h1>";
+		//myliststyle="<h1>Hello Global</h1>";
+		//myliststyle="<h1>Hello Honey</h1>";
+
+		//console.log(myliststyle);
+
+		//Without Template String
+
+		myliststyle="<ul>"+
+			"<li>Name :" +  "Aung Aung</li>"  +
+			"<li>Age :"  +  " 24</li>"     +
+			"<li>Job :"  +  " Web Developer</li>"+
+			"<li>City :"  +  " Mandalay</li>"+
+		"</ul>";
+
+
+
+		document.write(myliststyle);
+
+		myliststyle="<ul>"+
+		"<li>Name :" +  name + "</li>"  +
+		"<li>Age :"  +  age + "</li>"     +
+		"<li>Job :"  + job + "</li>"+
+		"<li>City :"  +  " Yangon</li>"+
+	"</ul>";
+
+
+
+		document.write(myliststyle);
+
+
+		// With Template String(` `)
+
+		myliststyle=`
+			<ul>
+				<li>Name : ${name}</li>
+				<li>Age : ${age}</li>
+				<li>Job : ${job}</li>
+				<li>City : ${city}</li>
+			</ul> `;
+
+		document.write(myliststyle);
+
+
+	</script>
+
+</body>
+</html>

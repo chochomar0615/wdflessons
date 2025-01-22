@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time</title>
+</head>
+<body>
+
+	<small>&copy; <span id="autoyear"> </span> Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved.</small>
+
+
+	<script type="text/javascript">
+
+		let mydate= new Date(); //object
+		console.log(mydate);	// Wed Sep 18 2024 20:34:13 GMT+0630 (Myanmar Time)
+		console.log(typeof mydate);
+		console.log(new Date()); //Wed Sep 18 2024 20:34:13 GMT+0630 (Myanmar Time)
+
+
+		let getdate= new Date().getDate(); //method
+		console.log(getdate); //18
+
+		let hour= new Date().getHours();
+		console.log(hour); //20
+
+		let minute= mydate.getMinutes();
+		console.log(minute); //42
+
+		let second= mydate.getSeconds();
+		console.log(second); //25
+
+		let millisec= mydate.getMilliseconds();
+		console.log(millisec);
+
+		//1s =100ms
+		// Calculate millisecond
+		// 1 jan 1970 > uptonow 
+
+		let time= mydate.getTime(); //method
+		console.log(time); //1726669516758 // float
+
+
+		//function
+		let now= Date.now();
+		console.log(now); //1726669516759 //full decimal
+
+		// 	0       1     2      3      4     5      6      7     8    9     10    11    
+		// ['jan','feb','mar','april','may','june','july','aug','sep','oct','nov','dec']
+		let month= new Date().getMonth();
+		console.log(month); //8
+
+
+		// 	   0    1     2      3      4      5     6
+		// ['sun','mon','tuse','wed','thurs','fri','sat']
+		let day= new Date().getDay();
+		console.log(day); //3
+
+
+		//AutoChange new year 2023 to 2024 etc..
+
+		let year=mydate.getFullYear();
+		console.log(year);
+
+		//Coordinated Universal Time
+		let uctyear=new Date().getUTCFullYear();
+		console.log(uctyear);
+
+		//Change text in element tag of HTML 
+
+		//document.getElementById('autoyear').textContent=uctyear;
+		// document.getElementById('autoyear').innerText=uctyear;
+		// document.getElementById('autoyear').innerHTML=uctyear;
+
+
+
+
+
+
+	</script>
+</body>
+</html>

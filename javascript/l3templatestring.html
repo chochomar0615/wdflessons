@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template String</title>
+</head>
+<body>
+
+	<ul>
+		<li>Name : Cho Cho Mar</li>
+		<li>Age : 25</li>
+		<li>Job : Web Developer</li>
+		<li>City : Mandalay</li>
+	</ul>
+
+
+
+	<script type="text/javascript">
+		
+		// var fullname;// oki = undefined
+
+		// let fullname;// oki = undefined
+
+		//const fullname; //error cause of do not overwrite
+
+
+		// console.log(fullname);
+
+
+		const name="cho cho";
+		const age = 25;
+		const city="Mandalay";
+		const job="Software Engineer";
+
+		document.write(name,age,city,job);
+
+		let myliststyle;
+
+		// myliststyle ="<h1>Hello World</h1>";
+
+		// console.log(myliststyle);
+		// document.write(myliststyle);
+
+
+		// without Template String
+
+	// 	myliststyle ="<ul>"+
+	// 	"<li>Name :"+ name +"</li>"+
+	// 	"<li>Age :"+ age +"</li>"+
+	// 	"<li>Job :"+ job+"</li>"+
+	// 	"<li>City :"+ city+"</li>"+
+	// "</ul>"
+	// 	;
+	// 	console.log(myliststyle);
+	// 	document.write(myliststyle);
+
+
+
+		myliststyle =`
+		<ul>
+			<li>Name : ${name}</li>
+			<li>Age : ${age}</li>
+			<li>Job : ${job}</li>
+			<li>City : ${city}</li>
+		</ul>
+	`;
+
+		console.log(myliststyle);
+		document.write(myliststyle);
+
+
+
+	</script>
+</body>
+</html>

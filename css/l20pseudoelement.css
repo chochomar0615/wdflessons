@@ -1,0 +1,43 @@
+/*Pseudo Element(::)*/
+
+/*.paragraph{
+	color:blue;
+	font-size:40px;
+	user-select:none;
+}
+*/
+
+
+/*.paragraph::first-letter{
+	color:blue;
+	font-size:40px;
+	user-select:none;
+}*/
+
+
+/*
+.paragraph::first-line{
+	color:blue;
+	font-size:15px;
+	user-select: none;
+}*/
+
+
+./*paragraph::selection{
+	background-color:black;
+	color:steelblue;
+}*/
+
+
+/* ::befor & ::after //content:'' must be in*/
+.paragraph::before{
+	content:'ABC'; /*   ***   */
+	color:red;
+	font-size:30px;
+}
+
+.paragraph::before{
+	content:'EGF';
+	color:violet;
+	font-size:30px;
+}

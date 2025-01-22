@@ -1,0 +1,126 @@
+=> git install
+
+=>One Time
+
+
+=for linux
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install git
+
+
+git
+git--version (git version 2.39.2)
+
+
+---------------------------------------------------------
+
+=> Config Git
+
+== ONE TIME
+
+git config --global user.name "chochomar0615"
+git config user.name
+
+git config --global user.email "septemberbecho@gmail.com"
+git config user.email
+
+
+----------------------------------------------------------
+
+
+=> Connect to Gitub Server(using SSH(Secure Shell))
+
+==ONE TIME
+
+==ssh-keygen 
+				(for window in cmd prompt/ space one to next keygen take 5 mins )
+				(C:\Users\Lenovo\.ssh\id_ed25519.pub) 
+
+
+== Get key after generate (for linux)
+
+ls -l ~/.ssh (for read only)
+cat ~/.ssh/id_rsa.pub (for public)
+
+
+== Check SSH Connection is successful or not
+ssh -T git@github.com
+
+
+
+
+
+----------------------------------------------------------
+
+
+=> gitub
+
+==ONE TIME
+
+
+git init
+
+git remote add origin git@github.com:chochomar0615/wdfproject.git
+
+git status
+git add -A 			git add * 		git add .
+git status
+<!-- git branch -M main -->
+git commit -m "my abcd project"
+git status
+git push -u origin main/master 		(u mean = upstream)
+
+
+=> update
+
+git status
+git add -A 			git add * 		git add .
+git status
+<!-- git branch -M main -->
+git commit -m "my abcd project"
+git status
+git push -u origin main/master 		(u mean = upstream)
+
+
+
+
+<!-- download directly code file into our laptop from github  -->
+=>Clone
+
+git clone git@github.com:chochomar0615/wdfproject.git
+
+=>Public
+
+Settings > Pages > Branch (choose master branch) > click "save"
+
+
+
+----------------------------------------------------------
+
+=> If Something went wrong
+
+1.git (install or uninstall/working or not)
+2.command prompt (os or git command prompt)
+3.vpn (need or not)
+4.project path info (./..../....)
+5.check ssh auth (optional , if you are using ssh connection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ethanmario7

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Method</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		let colors = ["red","green","blue","white","black","pink"]
+
+		console.log(colors);
+		console.log(colors.length);//6
+
+		console.log(colors[0]);//red
+		console.log(colors[5]);//pink
+
+
+		//indexOf(value)
+
+		console.log(colors.indexOf("black")); //4
+		console.log(colors.indexOf("Black")); //-1  	//Black do not have in colors array
+		console.log(colors.indexOf("silver")); //-1
+
+
+		//Array.isArray(array) 		//check is that //Array or not?
+		const name = "aung aung";
+
+		console.log(Array.isArray(name));//false
+		console.log(Array.isArray(colors));//true
+
+		//join("delimitor")		//this join function is also like String()
+
+		console.log(String(colors));//red,green,blue,white,black,pink
+		console.log(colors.toString());//red,green,blue,white,black,pink
+		console.log(colors.join());//red,green,blue,white,black,pink
+		console.log(colors.join("-"));//red-green-blue-white-black-pink
+		console.log(colors.join("/"));//red/green/blue/white/black/pink
+		console.log(colors.join(" "));//red green blue white black pink
+
+
+		const candies = ["red","green","blue","white","black"];
+			candies[5] = "pink";
+			candies[0] = "silver";
+
+		console.log(candies);//6
+
+
+
+		//push(value)		=>add new value to the end 
+
+		candies.push("violet");
+		candies.push("gold");
+		candies.push("gray","purple");
+
+		console.log(candies);//(10) ['silver', 'green', 'blue', 'white', 'black', 'pink', 'violet', 'gold', 'gray', 'purple']
+		console.log(candies.length);
+
+
+
+
+		//unshift(value)		=>add new value from front 
+
+		candies.unshift("banana");
+		candies.unshift("tomato");
+		candies.unshift("pineapple","avocado");
+
+		console.log(candies);//['pineapple', 'avocado', 'tomato', 'banana', 'silver', 'green', 'blue', 'white', 'black', 'pink', 'violet', 'gold', 'gray', 'purple']
+
+
+		//shift()		=> remove value and also index number(from front )
+
+		candies.shift();
+		candies.shift();//12
+
+		console.log(candies);//['avocado', 'tomato', 'banana', 'silver', 'green', 'blue', 'white', 'black', 'pink', 'violet', 'gold', 'gray', 'purple']
+
+
+		//pop()			=>remove value and also index number (from end)
+
+		candies.pop();	//11	
+		candies.pop();	//10
+
+		console.log(candies);
+		console.log(candies.length);//10
+
+
+		//delete()		=> remove only value
+
+		delete candies[1];
+		delete candies[4];
+
+		console.log(candies);
+		console.log(candies.length);
+
+		//splice(index,length);
+
+		const paints = candies.splice(0,5);
+		const copycandi = candies.splice(1,3);
+
+		console.log(paints);//(5) ['tomato', empty, 'silver', 'green', empty]
+		console.log(copycandi);//(3) ['black', 'pink', 'violet']
+
+
+
+		//concat
+
+		const arr1 =["ag ag","mg mg","naun naun","ng ng","bo bo"];
+		const arr2 =["su su","mu mu","po po","san san","wai wai"];
+		const arr3 = [10,20];
+
+		console.log(arr1+arr2);//ag ag,mg mg,naun naun,ng ng,bo bosu su,mu mu,po po,san san,wai wai      =>just string
+
+		console.log(arr1.concat(arr2));//(10) ['ag ag', 'mg mg', 'naun naun', 'ng ng', 'bo bo', 'su su', 'mu mu', 'po po', 'san san', 'wai wai']
+
+		console.log(arr3.concat(arr2));//(7)[10, 20, 'su su', 'mu mu', 'po po', 'san san', 'wai wai']
+
+
+
+		//sort()	=> a to z
+
+		const combinearrs = arr1.concat(arr2);
+
+
+		console.log(combinearrs);
+		console.log(combinearrs[0]);//ag ag
+		console.log(combinearrs[5]);//su su
+
+		// console.log(combinearrs.sort());//(10) ['ag ag', 'bo bo', 'mg mg', 'mu mu', 'naun naun', 'ng ng', 'po po', 'san san', 'su su', 'wai wai']   
+		//=>after sorting indexno. change	
+		console.log(combinearrs[0]);//ag ag
+		console.log(combinearrs[5]);//ng ng
+
+
+		//reverse()    =>reverse can't set z to a , just reverse
+
+		console.log(combinearrs.reverse());//(10) ['wai wai', 'san san', 'po po', 'mu mu', 'su su', 'bo bo', 'ng ng', 'naun naun', 'mg mg', 'ag ag']
+
+		const arrnumbers = [2,1,5,8,900,100,3,4,6,7,9,150,360,180,200,700,880,550];
+
+		console.log(arrnumbers);
+		console.log(arrnumbers.sort()); // do not sort ascending just sort
+		// console.log(arrnumbers.reverse());
+
+
+		//callback function
+
+		console.log(arrnumbers.sort(function(a,b){
+			return a-b; // 0 to 1 2 3 ....
+		}));
+
+		console.log(arrnumbers.sort(function(y,x){
+			return x-y; // ... 3 2 1 to 0
+		}));
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

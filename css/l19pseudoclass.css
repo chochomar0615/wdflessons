@@ -1,0 +1,104 @@
+/*Pseudo Class (:) */
+
+.div1{
+	width:300px;
+	height:100px;
+	background: green;
+}
+
+/*.div1:first-child{
+	background-color:red;
+	color:white;
+}
+*/
+
+/*.div1:first-of-type{
+	background-color:blue;
+}*/
+
+/*.div1:last-child{
+	background-color:yellow;
+	color:#fff;
+}*/
+
+/*.div1:last-of-type{
+	background-color:blue;
+}*/
+
+/*.div1:nth-child(2){
+	background-color:orange;
+}*/
+
+/*.div1:nth-child(5){
+	background-color:orange;
+}*/
+
+/*	not same group//all count	*/
+/*.div1:nth-child(even){
+	background-color:orange;
+}*/
+
+/*.div1:nth-child(odd){
+	background-color:orange;
+}*/
+
+/*.div1:nth-of-type(2){
+	background-color:orange;
+}*/
+
+/*.div1:nth-of-type(5){
+	background-color:orange;
+}*/
+
+
+/*Same group */
+.div1:nth-of-type(odd){
+	background-color:orange;
+}
+
+/*.div1:nth-of-type(even){
+	background-color:orange;
+}*/
+
+
+
+/*
+Ordinary Number
+1st
+2nd
+3rd
+4th
+5...........nth
+*/
+
+
+
+
+
+
+
+.divv{
+	width:250px;
+	height:250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*	not same group//all count	*/
+/*	.div1:nth-child(even){
+	background-color:orange;
+}*/
+
+/*Same group */
+/*	.div1:nth-of-type(even){
+	background-color:orange;
+}*/
+

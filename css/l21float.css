@@ -1,0 +1,79 @@
+/*
+	Variable 
+	(i)System Variable(default)
+	(ii)Custom Variable		(Custom Property)
+		naming start with(--)
+		and must small letter
+
+
+
+		eg:
+
+		:root{
+			--color1:red;
+		}
+
+*/
+
+/*
+	have two (left and right)
+	float:left;
+	float:right;
+
+	float property is just floating 
+	use in graph line for incoming & monthly marketing
+*/
+
+
+:root{
+	--c1:#ebb31a;
+	--c2:#2f0b9c;
+	--c3:#bd44b1;
+	--c4:green;
+	--c5:linear-gradient(red,green);
+}
+
+
+
+.div1{
+	width:100px;
+	height:100px;
+	background-color:var(--c1);
+
+	float:left;
+}
+
+
+.div2{
+	width:200px;
+	height:200px;
+	background-color:var(--c2);
+
+	float:left;
+}
+
+
+.div3{
+	width:300px;
+	height:300px;
+	background-color:var(--c3);
+
+	float:left;
+}
+
+
+.div4{
+	width:400px;
+	height:400px;
+	background-color:var(--c4);
+
+	float:left;
+}
+
+.div5{
+	width:500px;
+	height:500px;
+	background:var(--c5);
+
+	float:left;
+}

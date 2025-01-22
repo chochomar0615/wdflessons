@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function</title>
+</head>
+<body>
+
+
+
+	<script type="text/javascript">
+		//  (A) Default Function | System Function
+
+		//  (B) User Define Function
+				// (1) Regular Function
+						// (a) Manual Function
+						// (b) Parameter Function
+						// 		(i) Single Parameter
+						//		(ii) Multi Parameter
+				// (2) Arrow Function
+						// (a) Manual Function
+						// (b) Parameter Function
+						// 		(i) Single Parameter
+						// 		(ii) Multi Parameter
+				// (3) Generator Function
+						// yield
+						// next()
+
+
+
+		// function name(){
+		// 	code to be executed
+		// }
+
+		// name();	//function invoke / function recall
+
+
+		// (3) Generator Function
+
+		// function test1(){
+		// 	var num=1;
+		// 	return num;
+		// }
+
+		function test1(){
+			var num=1;
+			return num+5;
+		}
+
+		console.log(test1());
+
+		function* genfun(){
+			yield 1;
+			yield 2;
+			yield 3;
+
+		}
+
+		// console.log(genfun());//genfun {<suspended>}
+		// console.log(genfun().next());//{value: 1, done: false}
+		// console.log(genfun().next().value);//1
+		// console.log(genfun().next().value);//1
+		// console.log(genfun().next().value);//1
+
+		const getfun = genfun();
+		console.log(getfun.next());//{value: 1, done: false}
+		console.log(getfun.next());//{value: 2, done: false}
+		console.log(getfun.next());//{value: 3, done: false}
+		console.log(getfun.next());//{value: undefined, done: true}
+
+
+
+
+
+		
+	</script>
+</body>
+</html>

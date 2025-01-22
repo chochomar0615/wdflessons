@@ -1,0 +1,153 @@
+.bdstyle1{
+	border-style:solid;
+}
+
+
+.bdstyle2{
+	border-style:doubled;
+}
+
+
+.bdstyle3{
+	border-style:dotted;
+}
+
+
+.bdstyle4{
+	border-style:dashed;
+}
+
+
+.bdstyle5{
+	border-style:inset;
+}
+
+
+.bdstyle6{
+	border-style:outset;
+}
+
+
+/* width can write 100% but height cannot */
+/* border-radius is circle shape start from 50% but 
+width & height need to be same or not will be display oval shape */
+
+.bddesign{
+	width: 600px;
+	height: 300px; 
+
+	background-color: #32a8a4;
+
+	/*background: blue;*/
+
+	boder-style: solid;
+
+	/*border-radius:150px;*/
+	border-radius: 50%;
+
+	/*------------- lt rt rb lb (just like clockwise working)  */
+	/*border-radius: 2px 50px 100px 2000px*/
+
+	/*-------------- lt/rb (left-top/right-buttom)*/
+	/*border-radius: 5px 10px;*/
+
+	/* ------------- rt/lb (right-top/left-button) */
+	border-radius: 10px 10px;
+
+	/* border: b s c (borderthinkness style(solid,dotted) color) */
+	border: 6px solid red;
+
+}
+
+
+/* list-style-type & list-style are the same but process donot */
+ul{
+	/*list-style-type: none;*/
+	/*	list-style: none;*/
+}
+
+
+li{
+/*	list-style: none;*/
+	list-style-type: none;
+
+/*	border: b s c;*/
+/*	border: 6px dashed yellow;*/
+
+	border:6px;
+	border-style: dashed;
+	border-color: yellow;
+
+
+/*	list-style-type: circle;*/
+/*	list-style-type:square;*/
+/*	list-style-type:decimal;*/
+	list-style-type: decimal-leading-zero;
+
+
+/*	list-style-position:inside;*/
+	list-style-position:outside; /* default style*/
+
+}
+
+
+/*input{
+	width:300px;
+	background:#32a8a4;
+	color:#fff;
+}
+*/
+
+/*Attribute Selector*/
+input[type=text]{
+		width:300px;
+		background:pink;
+		color:#fff;
+		border-radius:10px;
+}
+
+
+input[type="email"],input[type='password']{
+	width:300px;
+	background:blue;
+	color:yellow;
+	border-radius:10px;
+
+}
+
+
+body{
+				/* Uniform Resource Locator */
+	background-image:url(./../img/icon/icon.png);
+
+	/* all image are displayed repeated */
+	/*	background-repeat:repeat;	//default style */
+		background-repeat: no-repeat;
+
+
+
+/*		background-repeat:repeat-x; */
+/*		image will displayed horizontally only one row */
+
+/*		background-repeat:repeat-y;*/
+		/* image will displayed vertically only one row */
+
+/*		background-position:center;*/
+/*		background-position:left;*/
+/*		background-position:right;*/
+/*		background-position:top;*/
+/*		background-position:bottom;*/
+
+
+/*		background-position:right top;*/
+/*		background-position:right bottom;*/
+/*		background-position:left top;*/
+/*		background-position:left bottom;*/
+
+/*		background-attachment: fixed;*/
+		background-attachment: scroll;
+
+}
+
+
+/*if you write many SAME  Properties, you must open one line  */

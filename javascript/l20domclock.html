@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Clock</title>
+	<style>
+		
+		body{
+			height: 100vh;
+
+			display: grid;
+			place-items: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h3 id="display"> 00 : 00 : 00 PM Sunday</h3>
+
+
+	<script type="text/javascript">
+			
+		const getdiplay = document.getElementById('diplay');
+		const days=["Sunday","Monday","Tuseay","Wednesday","Thursday","Friday","Saturday"];
+
+		// console.log(days);
+		// console.log(days[1]);
+
+		//function
+
+		function myclock(){
+
+		const mydate = new Date();
+
+		let gethours = mydate.getHours();
+		// console.log(gethours);//16
+
+		let getminutes = mydate.getMinutes();
+		// console.log(getminutes);//10
+
+		let getseconds = mydate.getSeconds();
+		// console.log(getseconds);//59
+
+		let getday = mydate.getDay();
+		// console.log(getday);
+
+		let getampm;
+
+		switch(gethours > 12){
+			case true:
+				getampm="PM";
+				gethours = gethours - 12;
+				// console.log(gethours);
+				break;
+			case false:
+				getampm="AM";
+		}
+
+		let setclock = `${gethours} :  ${getminutes} : ${getseconds} : ${getampm} ${days[getday]}`;
+
+		document.getElementById("display").innerText = setclock;
+		console.log(setclock);
+
+	}
+
+	//invoke
+	myclock();
+		
+
+	setInterval(myclock,1000);
+
+
+	</script>
+</body>
+</html>
+
+
+<!-- console.log((gethours > 12) ? getampm="PM" : getampm="AM"); -->
+
+<!-- 
+			1s = 1000ms
+ setInterval(callback function name,duration)
+
+ 			OR ||
+
+ setInterval(function(){
+
+	},duration); -->

@@ -1,0 +1,127 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Algerian';
+
+
+}
+
+body{
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+
+	padding: 30px 80px;
+
+	box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+	background-color: #f2f2f2;
+}
+
+
+h3{
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 28px;
+}
+
+.form .form-group label{
+	display: block;
+	color: blue;
+	font-size: 25px;
+	margin: 12px 0;
+}
+
+.form-group .form-control{
+	font-size: 22px;
+	width: 100%;
+	border: none;
+	border-bottom: 4px solid lightsalmon;
+	background-color: #f2f2f2;
+	padding: 20px 0;
+}
+
+
+.form-group .form-control:focus{
+	outline: none;
+	border-bottom: 4px solid lightsalmon;
+}
+
+
+
+.form .btn{
+	width: 100%;
+	background-color: blue;
+	padding: 20px 0;
+	font-size: 22px;
+	color: #fff;
+	margin: 20px 0;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+h4{
+	font-size: 30px;
+}
+
+.card .card-footer{
+
+	margin: 20px 0;
+
+	border-top: 6px dashed red;
+	border-bottom: 6px dashed red;
+}
+
+.card-footer .list-group-item{
+
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.list-group .list-group-item{
+
+	line-height: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	font-size: 22px;
+}
+
+.delete-item{
+	color: red;
+}
+
+.clear-tasks{
+	color: #fff;
+	text-decoration: none;
+	background-color: red;
+	padding: 5px 20px;
+}
+
+.card .moretasks{
+	margin-top: 30px;
+	text-align: center;
+	
+}
+
+img{
+	width: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 15DO  */
+
+/* 393 * /

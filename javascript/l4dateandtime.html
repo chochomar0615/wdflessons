@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time</title>
+</head>
+<body>
+
+	<div>
+		<small>
+			&copy;<span id="autoyear">Hello</span> Home Depot. All Rights Reserved. Use of this site is subject to certain Terms Of Use.
+		</small>
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+		let todaydate = new Date(); //object
+		console.log(todaydate); //Thu Dec 19 2024 12:51:37 GMT+0630 (Myanmar Time)
+		console.log(typeof todaydate); //object
+		console.log(new Date()); //Thu Dec 19 2024 12:51:37 GMT+0630 (Myanmar Time)
+
+		let getD = new Date().getDate();//method()
+		console.log(getD);//19
+
+		let hour = new Date().getHours();
+		console.log(hour);//13
+
+		let min = new Date().getMinutes();
+		console.log(min);//6
+
+		// let sec = new Date().getSeconds();
+		// console.log(sec);//32
+
+		let sec = todaydate.getSeconds();
+		console.log(sec);//26
+
+		let millisec = new Date().getMilliseconds();
+		console.log(millisec);		
+
+		// 1s = 1000ms
+		//1 january 1970 > uptonow
+
+		let time = todaydate.getTime(); //this is float
+		console.log(time);//1734590601426
+
+			//keyword =>Date
+		let now = Date.now(); // rounded number
+		console.log(now);//1734590601427
+
+
+
+		// array[]
+
+		//  0      1     2     3     4      5      6     7     8     9     10    11
+		//['jan','feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+
+		let month = new Date().getMonth();
+		console.log(month); // 11
+
+
+		//  0      1     2     3     4      5      6    
+		//['sun','mon','tue','wed','thu','fri','sat']
+
+		let day = new Date().getDay();
+		console.log(day); // 4 
+
+		let year = todaydate.getFullYear();
+		console.log(year);
+
+		let utcyr = todaydate.getUTCFullYear();
+		console.log(utcyr);
+
+
+		// document.getElementById("autoyear").textContent = utcyr;
+		// document.getElementById("autoyear").innerText = utcyr;
+		document.getElementById("autoyear").innerHTML = utcyr;
+
+		// m d y hr:m:s
+		let aniversary = new Date("7-10-2023");//Mon Jul 10 2023 00:00:00 GMT+0630 (Myanmar Time)
+
+			aniversary = new Date("9-4-2000");//Mon Sep 04 2000 00:00:00 GMT+0630 (Myanmar Time)
+
+			aniversary = new Date("Jun-8-2000");//Thu Jun 08 2000 00:00:00 GMT+0630 (Myanmar Time)
+
+			// aniversary = new Date(Aug 14 1998);//errror
+			aniversary = new Date('Aug-14-1997');//Thu Aug 14 1997 00:00:00 GMT+0630 (Myanmar Time)
+
+			aniversary = new Date('Aug 14 1997');//Thu Aug 14 1997 00:00:00 GMT+0630 (Myanmar Time)
+
+			aniversary = new Date('Dec/31/1999');//Fri Dec 31 1999 00:00:00 GMT+0630 (Myanmar Time)
+
+			aniversary = new Date('8/25/2000');//Fri Aug 25 2000 00:00:00 GMT+0630 (Myanmar Time)
+
+		console.log(aniversary);
+		console.log(aniversary.getMonth()); //7
+
+		aniversary.setDate(14);//Mon Feb 14 2000 00:00:00 GMT+0630 (Myanmar Time)
+		aniversary.setMonth(1);//Fri Feb 25 2000 00:00:00 GMT+0630 (Myanmar Time)		
+		aniversary.setUTCFullYear(2025);//Fri Feb 14 2025 00:00:00 GMT+0630 (Myanmar Time)
+
+		aniversary.setHours(17);//Fri Feb 14 2025 17:00:00 GMT+0630 (Myanmar Time)
+		aniversary.setMinutes(45);//Fri Feb 14 2025 17:45:00 GMT+0630 (Myanmar Time)
+		aniversary.setSeconds(59);//Fri Feb 14 2025 17:45:59 GMT+0630 (Myanmar Time)
+
+		console.log(aniversary);
+
+
+
+		
+		
+
+
+
+
+	</script>
+</body>
+</html>

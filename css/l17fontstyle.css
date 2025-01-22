@@ -1,0 +1,140 @@
+/*  at rules */
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+@import url('./l17desing.css');
+
+
+
+@font-face{
+	font-family:Akaya;
+	src:url("../fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
+}
+
+
+@font-face{
+	font-family:abcd;
+	src:local('Stick-Regular'), url("../fonts/Stick/Stick-Regular.ttf") format('woff');
+}
+
+/*local('') used before appear url(" ") ,but local must change format type as woff*/
+
+
+
+
+/*Font Integration
+ (i)Local Machine Integration
+ (ii)Global Integrated or Project Folder Integration
+
+
+(i)Local Machine Integration
+*/
+
+/*   --------***Universal Selector*** //must write at the top of all----------   */
+
+/*		*{
+	 		font-family:Century;
+		}
+*/
+/*.p1{
+	font-family:Arial;
+}
+
+.p2{
+	font-family:Century;
+}
+
+.p3{
+	font-family:"Times New Roman";
+}
+
+.p4{
+	font-family:"Times New Roman",TAMADA,Century,;
+}*/
+
+
+/*Global Integrate(take font-family from cloud//online) or 
+Project Folder Integration (take font-family from cloud//offline )*/
+
+
+.p1{
+	font-family: "stick", sans-serif;
+
+	color:red;
+}
+
+
+
+.p2{
+	 font-family: "Akaya Telivigala";
+
+	color:blue;
+}
+
+
+.p3{
+	font-family:Akaya;
+
+	color:pink;
+}
+
+.p5{
+	font-family:abcd;
+}
+
+
+.clickme{
+	text-decoration:none;
+	color:green;
+}
+
+
+/* pseudo class(:) */
+.clickme:hover{
+	text-decoration:underline;
+	color:blue;
+	font-size:50px;
+}
+
+
+.clickme:visited{
+	color:violet;
+}
+
+.menutext{
+	text-decoration: none;
+	font-family:Arial;
+	background-color:green;
+	color:#fff;
+	font-size:25px;
+
+/*	padding:10px;*/
+
+/*			top&bottom left&right */
+/*	padding:10px 10px;*/
+
+/*			top  right  bottom  left*/
+/*	padding:10px 20px 30px 40px;*/
+
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+
+	border-radius:10px;
+
+/*	write for hover link but must write hover's parent tag(that original tag is menutext) */
+/*	transition:all 2s;*/
+/*	transition:background-color 5s;*/
+	transition:background-color 3s,color 5s;
+
+}
+
+
+.menutext:hover{
+	background-color:yellow;
+	color:#000;
+}
+
+
+
+

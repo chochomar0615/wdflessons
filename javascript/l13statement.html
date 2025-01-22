@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statement</title>
+</head>
+<body>
+
+
+
+	<script type="text/javascript">
+		
+		//tenary operator( ? )
+		// c1 > c2 ? true : false;
+
+		const x = 100;
+		const y = 200;
+
+		console.log( x > y ? "Yes, it is true" : "No, it is false");//No, it is false
+		console.log( x < y ? "Yes, it is true" : "No, it is false");//Yes, it is true
+
+
+		// c1 > c2 ? true : (c1 == c2) ? true : false;
+
+		console.log( x == y ? "Yes, X is equal to Y" : (x < y) ? "Yes, X is less than Y" : "No, X is greater than Y");//Yes, it is true
+
+		//-------------------------------------------
+
+		// == equal to 
+		const num1 = 200;
+		const num2 = "200";
+
+		// check value only
+		console.log("== equal to result = " + ( num1 == num2 ? "True" : "False"));//True
+		console.log("== equal to result = " + ( num1 == num2 ? "True" : "False"));//True
+
+
+		// === equal to
+
+		let n1 = 100;
+		let n2 = "100";
+
+		//check value and data type
+		console.log("=== equal to result = " + ( n1 === n2 ? "True" : "False"));//True
+		console.log("=== equal to result = " + ( n1 === n2 ? "True" : "False"));//False
+
+		// != not equal to
+
+		 const n3 = 100;
+		 const n4 = "100";
+
+		//check value and data type
+		console.log("!= equal to result = " + ( n3 != n4 ? "True" : "False"));//False
+		console.log("!= equal to result = " + ( n3 != n4 ? "True" : "False"));//False
+
+
+		// !== not equal to
+
+		 let n5 = 100;
+		 let n6 = "100";
+
+		//check value and data type
+		console.log("!== equal to result = " + ( n5 !== n6 ? "True" : "False"));//True
+		console.log("!== equal to result = " + ( n5 !== n6 ? "True" : "False"));//True
+
+
+		const num3 = 200;
+		const num4 = 500;
+
+		console.log("> greater than result is = " .concat(num3 > num4 ? "True" : "False"));//False
+		console.log("> greater than or equal  result is = " .concat(num3 >= num4 ? "True" : "False"));//True
+
+
+		console.log("> less than or equal result is = " .concat(num3 < num4 ? "True" : "False"));//True
+		console.log("> less than or equal result is = " .concat(num3 <= num4 ? "True" : "False"));//True
+
+		//-------------------------------------------------------------------------------
+
+
+		// if statement
+
+				// True   :: hint
+		// if(condition){
+		// 	code to be executed;
+		// }
+
+
+		if(false){
+			console.log("hello!");
+		}
+
+		console.log("bye"); //if condition is true => final printout will out also, cuz'of true
+
+
+
+		const idx = 70;
+
+		if(idx > 30){
+			console.log("Yes, greater. Correct!");
+		}
+
+		if(idx >= 30){
+			console.log("Yes, greater! Correct!");
+		}
+
+		if(idx >= 30){
+			console.log("Yes, greater! Correct!");
+		}
+
+
+
+		if(idx != 30){
+			console.log("Yes, not equal! Correct!");
+		}else{
+			console.log("No, equal" );
+		}
+
+
+
+
+		if(idx !== 70){
+			console.log("Yes,not same dt/equal. Correct!");
+		}
+		else{
+			console.log("No,same dt/equal. Incorrect")
+		}
+
+
+
+		// else if()
+
+		// if(condition){
+		// 	code to be executed;
+		// }else if(condition){
+		// 	code to be executed;
+		// }else if(condition){
+		// 	code to be executed;
+		// }else{
+		// 	code to be executed;
+		// }
+
+
+		const j = 1000;
+		const k = 1000;
+
+		if(j < k){
+			console.log("j is less than k.");
+		}else if(j > k){
+			console.log("j is geater than k.");
+		}
+		else{
+			console.log("They are equal.");
+		}
+
+
+		//Nested Condition
+
+		// const passcode = prompt("Enter your passcode at least 6 digit");
+
+		// if(passcode.length >= 6){
+		// 	console.log("Good Passcode. ");
+		// 	if(passcode.indexOf(" ") == -1 ){
+		// 		console.log("Yes,do not include space / Valid Passcode");
+		// 	}else{
+		// 		console.log("No,space include but shoud not contain space");
+		// 	}
+		// }else{
+		// 	console.log("Passcode must be longer");
+		// }
+
+
+
+		// switch statement		//with exact condition not apporiatate
+
+		// switch(statement){
+		// 	case condition: 
+		// 		code to be executed;
+		// 		break;
+		// 	case condition: 
+		// 		code to be executed;
+		// 		break;
+		// 	case condition: 
+		// 		code to be executed;
+		// 		break;
+		// 	default: 
+		// 		code to be executed;
+		// 		break;
+		// }
+
+
+		// const color ="red";
+		const color ="red";
+
+
+
+		switch(color){
+
+		case "white":
+			console.log("White is not my favorite color.");
+			break; 
+		case "blue":
+			console.log("Blue is not my favorite color.");
+			break; 
+		case "pink":
+			console.log("Pink is not my favorite color.");
+			break; 
+		case "red":
+			console.log("Red is my favorite color. Correct!");
+			break; 
+		default:
+			console.log("Try Again");
+		}
+
+
+		let getday = new Date().getDay();
+		console.log(getday);
+
+		let today;
+		// console.log(today);
+
+		switch(getday){
+		case 0:
+			today = "Sunday";
+			break;
+		case 1:
+			today = "Monday";
+			break;
+		case 2:
+			today = "Tuseday";
+			break;
+		case 3:
+			today = "Wednesday";
+			break;
+		case 4:
+			today = "Thursday";
+			break;
+		case 5:
+			today = "Friday";
+			break;
+		default:
+			today = "Satday";
+			break;
+		}
+
+		console.log(`Today is ${today}`);
+
+
+		let p,q;
+			p = 10;
+			q = 50;
+
+		console.log(p,q);
+
+		// p = p+q;
+		// console.log(p);//60
+
+		// p = q;
+
+		// console.log(p);//50
+
+		// p += q;
+		// console.log(p);//60
+
+		// q-=p;
+		// w=q;//40
+
+		// p -= q;//-40
+		// console.log(w);//
+
+		// p *= q;
+		// console.log(p);//500
+
+		// p /= q;
+		// console.log(p);//0.2
+
+
+		// p = 60;
+		// q= 50;
+
+		// p %= q;
+		// console.log(p);//10
+
+
+		// let username = prompt("Enter Username");
+		// let password = prompt("Enter Password");
+
+		// console.log(typeof username,typeof password);
+
+		// if(username === "aungaung" && password === "12345"){
+		// 	window.alert("Correct Password");
+		// }else{
+		// 	window.alert("Check your Password, Forgot Password?? ");
+		// }
+
+
+		let a = +prompt("Enter Number 1");
+		let s =prompt("Enter cal");
+		let b = +prompt("Enter Number 2");
+		
+
+		// console.log(a,b);
+
+		
+
+		let add = a+b;
+		let sub =a-b;
+		let mul =a*b;
+		let div =a/b;
+
+		// if(s== "+"){
+		// 	console.log(add);
+		// }else if(s== "-"){
+		// 	console.log(sub);
+		// }else if(s== "*"){
+		// 	console.log(mul);
+		// }else if(s== "/"){
+		// 	console.log(div);
+		// }
+
+		// switch(s){
+		// case "+":
+		// 	console.log(`${a} ${s} ${b} = ${a+b} `);
+		// 	break;
+		// case "-":
+		// 	console.log(`${a} ${s} ${b} = ${a-b} `);
+		// 	break;
+		// case "*":
+		// 	console.log(`${a} ${s} ${b} = ${a*b} `);
+		// 	break;
+		// case "/":
+		// 	console.log(`${a} ${s} ${b} = ${a/b} `);
+		// 	break;
+		// default:
+		// 	console.log("Thank you");
+		// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// let un =prompt("username");
+		// let passw =prompt("password");
+
+		// if(un == un.toLowerCase() && typeof passw == 'number' && un.indexOf(" ") == -1){
+		// 	console.log("All are true");
+			
+		// }else{
+		// 	console.log("Incorrect! Upper Case include");
+		// }
+
+
+	</script>
+</body>
+</html>
+
+
+<!--
+
+Comparison Operators
+== equal to 				//check only value
+=== equal to 				//check only value and data type
+!= not equal
+!== not equal
+> greater than
+< less than 
+>= greater than or equal to
+<= less than or equal to
+? statement (ternary operator) 
+
+-->
+
+<!-- Assignment Operators
+=
++=
+-=
+*=
+/=
+%= -->
+
+<!-- Logical Operators
+ 
+&& and
+|| or
+! not
+
+ -->

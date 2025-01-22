@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		let arrgirls = new Array("su su","lu lu","hla hla");
+
+		console.log(arrgirls);
+		console.info(arrgirls);
+		console.table(arrgirls);
+
+		const arrboys =["mg mg","ag ag","ko ko",500,800];
+
+		console.log(arrboys);
+		console.log(arrboys.length); //3
+		console.log(typeof arrboys); //object
+
+
+		console.log(arrboys[0]);
+		console.log(typeof arrboys[0]);
+		console.log(arrboys[4]);		
+		console.log(typeof arrboys[4]);
+
+		console.log(arrboys.length);
+					//5-4 =1  =>index calculate
+		console.log(arrboys[arrboys.length-4]);//ag ag
+
+		let myarrs =['hello',1500,true,undefined,null,new Date(),['red','green'],{firstname:'Kyaw Kyaw',city: "Yangon"}];
+
+		console.log(myarrs);
+		console.log(myarrs.length);
+		console.log(myarrs[0]);
+		console.log(myarrs[7]);
+		console.log(myarrs[6][0]);//red
+		console.log(myarrs[7].firstname);
+		console.log(myarrs[7].city);
+
+
+		let colors = ["red","yellow","green","blue"];
+			colors = ["rgba","cmyk","hsla"];
+
+		console.log(colors); //['rgba', 'cmyk', 'hsla']
+
+		let paints = ["red","green",,"blue"];
+
+		console.log(paints);//['red', 'green', empty, 'blue']
+		console.log(paints[2]);//undefined
+		console.log(paints[3]);//blue
+
+
+		let colours = [];
+			colours[0] = "white";
+			colours[1] = "black";
+			colours[2] = "crayon";
+			colours[3] = "silver";
+			colours[8] = "orange";
+
+			colours[4] = "violet";
+			colours[8] = 25;
+
+
+		console.log(colours);
+		console.log(colours[5]); //undefined
+		console.log(colours.length);//9
+
+
+		let animals = ['cat','dog'];
+			animals[2] = "owl";
+			animals[2] = "flower";
+			animals[0] = "cow";
+
+		console.log(animals);
+		console.log(animals.length);
+
+
+		//Nested Array
+
+		const nestarrs = [
+				["red","green","white"],
+				["cmyk","rgba","hsla"],
+				["phone","laptop",["sony","lenovo"]]
+
+		];
+
+		console.log(nestarrs);//[Array(3), Array(3), Array(3)]
+		console.log(nestarrs.length);//3
+		console.log(nestarrs[0]);//['red', 'green', 'white']
+		console.log(nestarrs[0][2]);//white
+		console.log(nestarrs[2]);//['phone', 'laptop', Array(2)]
+		console.log(nestarrs[2][2][0]);//sony
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Single Selector */
+h2{
+	color:yellow;
+}
+
+/* Group Selector */
+h3,h4,h5{
+	color:steelblue;
+	font-size:20px;
+}
+
+
+/* ID selector */
+#myself{
+	color:blue;
+	font-size:35px;
+}
+
+#family,#mya{
+	color:violet;
+	font-size:20px;
+}
+
+/*Class Selector--  start with " . "  */
+.phone{
+	color:red;
+}
+
+.fontlg{
+	font-size:40px;
+}
+
+ 
+/* 
+	All ID selector & Class selector are
+	-small letter
+	-no start with numbers //456fontlg is wrong
+*/

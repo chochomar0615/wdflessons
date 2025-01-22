@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Method</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		let firstname = "Mya Hnin";
+		let lastname = "Yee Lwin";
+
+		console.log(firstname);
+		console.log(lastname);
+		console.log(firstname,lastname);
+		console.log(firstname.length);
+
+		//Concat(+)
+		let fullname = firstname + ""+"lastname";
+		console.log(fullname);
+
+		//=> concat(string)
+		console.log(firstname.concat(lastname));
+		console.log(lastname.concat(firstname));
+
+		// Append( += )
+
+		let name1 = "Cho Cho";
+		let name2 = " Mar";
+
+		console.log(name1+name2);
+		console.log(name1.concat(name2));
+
+		name1 += name2;
+		console.log(name1);
+
+		let x = 40;
+		x += 5;
+
+		console.log(x);
+
+		//String in Character Array in JS
+
+		let myfriend = "Win Thu Zar";
+
+		console.log(myfriend);
+		console.log(typeof myfriend);
+		console.log(myfriend.length);
+		console.log(myfriend[myfriend.length-1]);
+		console.log(myfriend[0]);
+		console.log(myfriend[3]);
+
+		//charAt(index)
+
+		const nickname = 'Char Char Mo';
+
+		console.log(nickname);
+		console.log(nickname[5]);
+		console.log(nickname.charAt(5));
+		console.log(nickname.length);
+		console.log(nickname.charAt(nickname.length-1));
+
+		//repeat(count)
+
+		let greet ="hello";
+		console.log(greet.repeat(5));
+
+
+		//includes(string)		=>case sensitive
+
+		let favcolor = "My fav color is black color";
+		console.log(favcolor.includes("black"));  //true
+		console.log(favcolor.includes("red"));    //false
+		console.log(favcolor.includes("Black"));  //false
+		console.log(favcolor.includes("BLACK"));  //false
+		console.log(favcolor.includes("bla"));    //true
+
+		//replace (old,new)
+
+		console.log(favcolor.replace("black","red")); //My fav color is red color
+		console.log(favcolor.replace("Black","red")); //My fav color is red color
+		console.log(favcolor.replace("BLACK","red")); //My fav color is red color
+		console.log(favcolor.replace("bla","red"));	  //My fav color is redck color
+
+	let fcolor ='My favourite color is red color';
+
+	console.log(fcolor);
+	console.log(favcolor.replace("color","colour"));//My favourite colour is red color
+
+//startsWith(string)			//=>case sensitive
+//startsWith(string,index)    //=>case sensitive
+
+	const sayhi = "Dear U Ba";
+
+	console.log(sayhi.startsWith("Dear"));//true
+	console.log(sayhi.startsWith("dear")); //false
+	console.log(sayhi.startsWith("D"));//true
+	console.log(sayhi.startsWith("d"));//false
+
+	console.log(sayhi.length);
+
+	console.log(sayhi.startsWith("Dear",0)); //true
+	console.log(sayhi.startsWith("ar",2)); //true
+	console.log(sayhi.startsWith("U",5)); //true
+	console.log(sayhi.startsWith("a",8)); //
+
+//endsWith(string)
+//endsWith(string,length)
+
+	const saybye = "See you later";
+
+	console.log(saybye.endsWith("later"));//true
+	console.log(saybye.endsWith("Later")); //false
+	console.log(saybye.endsWith("r"));//true
+	console.log(saybye.endsWith("R"));//false
+
+
+	console.log(saybye.endsWith("r",saybye.length-0));
+					//13-4
+	console.log(saybye.endsWith("l",saybye.length-4))
+
+
+	const yousay = "Hello ag ag";
+	if(yousay.startsWith("Hello")){
+		var isay = "hi Kyaw Kyaw";
+	}
+	console.log(`You say ${yousay}, I say ${isay}`); //You say Hello ag age, I say hi Kyaw Kyaw
+
+	const yousay = "Hello ag ag";
+	if(yousay.startsWith("dear")){
+		var isay = "hi Kyaw Kyaw";
+	}
+	console.log(`You say ${yousay}, I say ${isay}`); //You say Hello ag age, I say undefined
+
+
+// substring(index,length)
+
+console.log(fcolor.substring(0,10)+"...");
+console.log(fcolor.substring(1,9).concat('---'));
+
+// Change Case
+
+console.log(favcolor.toLowerCase());
+console.log(favcolor.toUpperCase());
+
+
+	</script>
+</body>
+</html>
+
+
+<!-- 26CC -->

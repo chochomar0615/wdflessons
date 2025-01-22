@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Type</title>
+</head>
+<body>
+
+	<h2>hello</h2>
+
+	<script type="text/javascript">
+		
+		//String
+		const name = "Su Su";
+		console.log(name);
+		console.log(typeof(name));//typeof() =>function
+		console.log(typeof name);//typeof	=>keyword
+
+
+		// console.warn(typeof(name));
+		// console.error(typeof name);
+
+		// console.error(typeof(name));
+
+
+
+		//Number
+
+		const age = 25;
+		console.log(age);
+		console.log(typeof age);
+		console.log(typeof(age));
+
+
+		//Boolean(true,false)
+
+		const hascar = false;
+		console.log(hascar);
+		console.log(typeof(hascar));
+
+		//object
+
+		var date = new Date();
+		console.log(date);
+		console.log(typeof date);//class object
+
+		//Object (Javascript Object)
+		// key:value
+
+		const address ={
+			no : "No.123",
+			street : "st btw 75X76",
+			city : "Mandalay",
+			country : "Myanmar"
+		}
+
+		console.log(address);
+		console.log(address.street);//st btw 75X76
+		console.log(address.country);//Myanmar
+
+		//Array
+
+		const hobbies =["movie","music","sport"];
+		console.log(hobbies);
+		console.warn("the typeof Hobbies given by array => "+ typeof hobbies);//object
+		console.log(hobbies[0]);
+		console.log(hobbies[1]);
+		console.log(hobbies[3]);//undefined
+
+		//undefined =>not value yet
+
+		let test;
+		console.log(test);//undefined 
+		console.log(typeof test);
+
+
+		const nickname ="";// empty [] {}
+		console.log(nickname);
+		console.log(typeof nickname);//string
+
+
+		const car =null;  //as given datatype will change but already placed for value it is just null
+		console.log(car);
+		console.log(typeof car);//object
+
+
+
+	</script>
+
+
+</body>
+</html>
+
+
+<!-- 
+				JS
+				|
+			Data Type
+				|
+|-----------|--------|------------|
+string	  number	boolean 	object
+			|						|
+		|-------|			|-------|--------|---------|
+	 number    float	  classobj	obj     Array    null
+
+
+ -->

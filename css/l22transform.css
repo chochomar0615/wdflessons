@@ -1,0 +1,160 @@
+:root{
+	--gn:green;
+	--rd:red;
+	--vl:violet;
+	--yl:yellow;
+	--ab:300px; /*  width globalize announce  */
+}
+
+.div1{
+	--wh:200px;
+	width:var(--wh);
+	height:100px;
+	background: var(--gn);
+
+/*				rotate(xy) // (i)2D dimension,  can write + (rotate right) or - (left)   */
+	transform:rotate(45deg);
+}
+
+.div2{
+/*	--wh:200px;*/
+	width:var(--ab);
+	height:100px;
+	background: var(--rd);
+
+	transform:rotate(-45deg);
+/*	transform:rotate(360deg);*/
+
+/*	transform:rotate(1turn);*/
+
+}
+
+
+.div3{
+/*	--wh:200px;*/
+	width:var(--ab);
+	height:100px;
+	background: var(--vl);
+
+/*	2D dimension flip on X-axis */
+	 /*flip in front*/
+/*	 transform:rotateX(200deg);*/
+
+	/*  flip on back*/
+	transform:rotateX(-45deg);  
+}
+
+.div4{
+/*	--wh:200px;*/
+	width:var(--ab);
+	height:100px;
+	background: var(--yl);
+
+/*	2D dimension flip on Y-axis */
+
+	/* flip on right*/
+/*	transform:rotateY(45deg);  */
+
+	 /* flip on left  */ 
+	transform:rotateY(45deg);  
+
+}
+
+
+.div5{
+	width:100px;
+	height:100px;
+	background: red;
+
+
+/*			scale(xy)    //use in zoom in,zoom out //use for sizing will work as 100xscale(1.5)   */
+/*			default(1)*/
+/*	transform:scale(0);*/
+/*	transform:scale(0.5);*/
+/*	transform:scale(1);*/
+	transform:scale(1.5);
+}
+
+
+.div6{
+	width:100px;
+	height:100px;
+	background: var(--vl);
+
+/*	 Tain Saung //work on X-axis		*/
+	transform:skew(-20deg);
+/*	transform:skew(20deg);*/
+}
+
+
+
+.div7{
+	width:100px;
+	height:100px;
+	background: var(--vl);
+
+/*				translate(x) */
+/*	transform: translateX(100px);*/
+
+/*				translate(x) // only work along X-axis That ***translate(x)***   */
+/*	transform: translate(100px);*/
+/*	transform: translate(50px);*/
+
+/*	transform: translate(-100px);*/
+/*	transform: translate(-50px);*/
+
+/*	transform: translate(-100%);*/
+/*	transform: translate(-50%);*/
+
+
+	/*				translate(y) */
+	transform: translateY(100px);
+	transform: translateY(-50px);
+
+	transform: translateY(100%);
+	transform: translateY(50%);
+
+	transform: translateY(-100%);
+	transform: translateY(-50%);
+}
+
+
+.div8{
+	width:100px;
+	height:100px;
+	background-color:var(--rd);
+
+/*				translate(x,y)*/
+
+/*	transform:translate(50%,50%);*/
+/*	transform:translate(50%,-50%);*/
+/*	transform:translate(-50%,50%);*/
+/*	transform:translate(-50%,-50%);*/
+
+	transform:translateX(50%) translateY(50%);
+/*	transform:translateX(50%) translateY(-50px);*/
+}
+
+
+h1{
+	text-align:center;
+	color:green;
+}
+
+p.text{
+	text-align:justify;
+	color:steelblue;
+}
+
+
+@media(max-width:600px){
+
+	h1{
+		color:steelblue;
+		font-size:15px;
+	}
+
+	p.text{
+		color:green;
+	}
+}

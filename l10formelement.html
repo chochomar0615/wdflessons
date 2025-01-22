@@ -1,0 +1,250 @@
+<html>
+<head>
+	<title>Form Element</title>
+</head>
+<body>
+	<h3>Form Elements</h3>
+
+
+	<fieldset>
+		<legend>This is the Sample Form</legend>
+
+  <!-- input type="file"    must write   enctype-->
+  <!-- action="databasefilename.php" -->
+  <!-- method="GET" //way to send how method 
+  						(menthod is called protocol),, 
+  						GET/POST/PUT/PATCH/DELETE
+
+  						get 	// UI ka nay twar
+  						post	// form ka nay twar -->
+
+
+
+	<form action="" method="" enctype="multiple/form-data">  
+
+
+		<label for="fn1">First Name</label>
+		<input type="text" name="fname" id="fn1" class="" value="Aung" placeholder="Enter first name" minlength="3" maxlength="5" autocomplete="off" autofocus />
+		<br/><br/>
+
+		<label for="ln1">Last Name</label>
+		<input type="text" name="lname" id="ln1" class="" placeholder="Enter last name"
+		minlength="3" maxlength="5"autocomplete="off" required />
+		<br/><br/>
+
+
+
+
+		<label for="fn">First Name</label>
+		<input type="text" name="firstname" id="fn" class="" value="Aung" placeholder="Enter first name" minlength="3" maxlength="5" autocomplete="off" autofocus readonly />
+		<br/><br/>
+
+		<label for="ln">Last Name</label>
+		<input type="text" name="lastname" id="ln" class="" value="Kyaw" placeholder="Enter last name"
+		minlength="3" maxlength="5"autocomplete="off" required disabled />
+		<br/><br/>
+
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" class="" placeholder="Enter your age" min="20" max="60" autocomplete="off" />
+		<br/><br/>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" class="" placeholder="Enter your password" minlength="3" maxlength="5"autocomplete="off"/>
+		<br/><br/>
+
+		<label>Gender</label>
+
+			<!-- name="gender" //all 3 input box name must be same or not every u choose male another u choose -->
+
+		<input type="radio" name="gender" id="genderm" class="" value="0" checked/>
+			<label for="genderm">Male</label>
+		<input type="radio" name="gender" id="genderf" class="" value="1" />
+			<label for="genderf">Female</label>
+		<input type="radio" name="gender" id="gendero" class="" value="1" />
+			<label for="gendero">Other</label>
+
+
+		<br/><br/><br/>
+
+		<label>Fruits</label>
+
+		<input type="radio" name="fruit" id="apple" class="" value="0"/>
+			<label for="apple">Apple</label>
+		<input type="radio" name="fruit" id="orange" class="" value="1" />
+			<label for="orange">Orange</label>
+		<input type="radio" name="fruit" id="banana" class="" value="1" />
+			<label for="banana">Banana</label>
+
+
+		<br/><br/><br/>
+
+
+		<label>Choose your fav Color</label>
+
+		<input type="checkbox" name="color" id="red" class="" value="1" checked/>
+			<label for="red">Red</label>
+		<input type="checkbox" name="color" id="wh" class="" value="2" />
+			<label for="wh">White</label>
+		<input type="checkbox" name="color" id="bl" class="" value="3"/>
+			<label for="bl">Blue</label>
+		<input type="checkbox" name="color" id="yel" class="" value="4" />
+			<label for="yel">Yellow</label>
+
+		<br/><br/>
+
+		<label>Citizens</label>
+
+		<select name="country" id="country">
+			<option selected disabled>Choose your country</option>
+			<option value="1">Myanmar</option>
+			<option value="2">Thailand</option>
+			<option value="3">Philipine</option>
+			<option value="4">Japan</option>
+			<option value="5">Korea</option>
+		</select>
+
+
+		<br/><br/>
+
+		<label for="role">Rolee</label>
+
+		<select name="role[]" id="role" class="" multiple required>
+			<option selected disabled>Choose a role</option>
+			<option value="1">Manager</option>
+			<option value="2">Editor</option>
+			<option value="3">Supervisor</option>
+			<option value="4">Sales</option>
+		</select>
+
+		<br/><br/>
+
+		<label for="dob">Date</label>
+		<input type="date" name="dob" id="dob" class=""/>
+
+		<br/><br/>
+
+		<label for="bookingtime">BookingTime</label>
+		<input type="time" name="bookingtime" id="bookingtime" class=""/>
+
+		<br/><br/>
+
+		<label for="aa">Appointment</label>
+		<input type="datetime-local" name="aa" id="aa" class=""/>
+
+		<br/><br/>
+
+		<label for="v1">Volume</label>
+		<input type="range" name="v1" id="v1" class="" min="0" max="25" value="20" step="5"/>
+
+		<br/><br/>
+
+		<label for="volume">Volume</label>
+		<input type="range" name="volume" id="volume" class="" min="0" max="100" value="0"/>
+		<!-- can write as u like min="0" max="200"
+			value="" //default may be half started
+			value="50" // 50 started
+			step="2"	//jump 2 
+			step="10"	//jump 10
+		-->
+
+		<br/><br/>
+
+		<!-- only show default design//filename will appear-->
+		<label for="nrc">NRC</label>
+		<input type="file" name="nrc" id="nrc" class="" multiple />
+
+		<br/><br/>
+
+		<label for="im">Choose All Image File</label>
+		<input type="file" name="ima" id="im" class="" capture="user" accept="image/*" multiple />
+
+		<br/><br/>
+
+		<label for="im">Choose JPG-Image File</label>
+		<input type="file" name="ima" id="im" class="" capture="user" accept="image/jpg" multiple />
+
+		<br/><br/>
+
+		<label for="vdo">Choose Video</label>
+		<input type="file" name="vdo" id="vdo" class="" capture="environment" accept="video/*"multiple />
+
+
+		<br/><br/>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" class="" placeholder="Enter your email"  />
+
+		<br/><br/>
+
+		<label for="bio">Bio</label>
+		<textarea name="bio" id="bio" class="" rows="10" spellcheck="true" placeholder="Enter your bio" ></textarea>
+		<!--row="10" 	//textbox width about 10 sentences 
+			spellcheck="true"	//checking spelling //want to check "true"  , "false" do not check-->
+
+		<br/><br/>
+
+		<input type="time" name="test" id="test" class="" />
+		<br/><br/>
+
+		<input type="time" name="test" id="test" class="" hidden />
+		<br/><br/>
+
+		<input type="hidden" name="lat" id="lat" class="" />
+
+		<br/><br/>
+
+		<input type="reset" name="cancel" id="cancel" class="" />
+		<input type="reset" name="cancel" id="cancel" class="" value="Cancel" />
+		<input type="button" name="login" id="login" class="" value="Login" />
+
+		<input type="submit" name="signup" id="signup" class="" value="Sign Up" />	<!-- *** -->
+
+
+		<button type="reset" name="cancel" id="cancel" class="">Cancel</button>
+		<button type="button" name="register" id="register" class="">Cancel</button>
+		<button type="submit" name="signup" id="signup" class="">Signup</button><!-- *** -->
+	</form>
+
+	</fieldset>
+</body>
+</html>
+
+<!-- Structured Query Language -->
+<!-- input type="text" name="databasecolumn name"-->
+<!-- 
+	name  //for Database,PHP,also js (Backend)  can write 250
+	id    //for JavaScript
+	class //for CSS ,frontend
+	value //insert into SQL
+-->
+<!-- label for="" // to drop cursor need to note the same name with id -->
+<!--	// Stand alone attribute
+	autofocus, checked, selected, disabled ,multiple,hidden,required,readonly
+
+	
+	selected--------can write one in one form
+	disabled--------can write many in one form
+	required--------cannot write in radio button & checkbox button,
+					//must be filled 
+	readonly--------readonly is the same disabled
+	value="hidden"----can also write
+
+	autofocus="true" (or can write) autofocus  //cursor in
+	first text box-->
+<!-- autocomple="off" //no record for History -->
+<!-- in number    max   &  min  -->
+<!-- in text    minlength   & maxlength //when click submit button it's 											required less than minlength-->
+<!-- value //cannot insert on keyboard //value must set -->
+<!-- choose one of these Use Radion Button-->
+<!-- name="role[]" is aim to choose multiple need to write " [] " //in select tag-->
+<!-- type="datetime-local" is used for datetime-->
+<!-- type="range" is used for volume/zoom in,out/font size/video -->
+<!-- enctype="multiple/form-data"   //work for form saving data'path to 		Database Server as encrypted code,,,,,,,,     encrypt type-->
+<!-- capture="user" & capture="environment" //want to display camera
+	 front-camera(selfie) for user , back-camera for environment
+	//only can use in Android mobile -->
+<!-- accept="image/*" //can choose all image
+	 accept="image/jpg" //can choose jpg image
+	 accept="video/*" //can choose all video
+	-->
+

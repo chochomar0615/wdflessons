@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator With Select/option tag</title>
+</head>
+<body>
+
+	
+	<form class="form-group">
+		<input type="text" name="num1" id="num1" class="form-control " placeholder="num1" />
+
+		<select name="cal" id="mySelect">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+
+		<input type="text" name="num1" id="num2" class="form-control" placeholder="num1" />
+
+		<button type="button" onclick="myfunction()">=</button>
+
+		<input type="text" name="result" id="result" class="form-control" />
+
+
+
+	</form>
+
+
+	<script type="text/javascript">
+
+		function myfunction(){
+
+		const q =Number( document.getElementById("num1").value);
+		const p = Number( document.getElementById("num2").value);
+		const selected =  document.getElementById("mySelect").value;
+
+		// console.log(typeof q,typeof p,typeof selected);
+
+		// console.log(number1,number2);
+		// console.log(selected);
+
+
+		let result ;
+
+		switch(selected){
+		case '+':
+			result=q+p;
+			break;
+
+		case '-':
+			result=q-p;
+			break;
+
+		case '*':
+			result=q*p;
+			break;
+
+		case '/':
+			if(p == 0){
+				result="Invalid";
+				break;
+			}
+			result=q/p;
+			break;
+		default :
+			console.log("Check your process");
+
+		}
+
+		
+		// document.getElementById("mySelect").value="";
+
+		document.getElementById("result").value =result;
+
+		
+		}
+		
+
+	
+	</script>
+</body>
+</html>

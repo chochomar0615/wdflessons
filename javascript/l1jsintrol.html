@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS intro</title>
+</head>
+<body>
+
+	<h1>Hay</h1>
+
+	<script type="text/javascript">
+		console.log("aung aung");
+		console.log(`tun tun`);
+
+		console.log("10");
+		console.log(`80`);
+
+		console.log("10"+"20");
+		console.log(10+20);	
+
+		console.log("zaw zaw",20,'student');
+		console.log(100,200,300);	
+
+		console.log(true);//true
+		console.log(false);//false
+
+		console.log(true+true);//2
+		console.log("po po"+false);
+		console.log("true"+true);//truetrue
+
+		console.log(50+true);//51
+
+		console.log(false+false);
+		console.log("false"+false);
+		console.log("zaw zaw"+false);
+
+		console.log(50*false);
+		console.log(50+false);
+		console.log(typeof true); //boolean
+		console.log(typeof false); //boolean
+
+		// alert("Hello Myanmar");
+		// window.alert("Hello Hello hello hello");
+
+		// window.alert("Hello Welcome to Our Lessons");
+		// alert("Are you ready to learn JavaScript?");
+
+		//Variable ( var / let / const )
+
+		var fullname ="Myo Myo";
+		console.log(fullname);
+		// window.alert(fullname);
+
+
+		//Concatenate ( + )
+		console.log("My friend name's fullname is ---");
+		console.log("My friend name's is --- "+fullname);	
+		console.log("My friend name's is --- "+fullname);	
+		console.log(`My friend name's is`+` `+fullname);
+
+		//Backticks ( `` )
+		var lady ="Honey Nway Oo";
+		console.log("We love lady");//We love lady
+		console.log(`${lady}`);//Honey Nway Oo	
+		console.log(`We love ${lady}`);
+
+
+		var x,y;
+
+		var result = x+y;
+		 	result = 10+20;
+		console.log(result);
+
+		var num1 = 100;
+		const num2 = 200;
+
+		console.log(num1);
+		console.log(num1,num2);
+		console.log(num1+num2);//300
+		console.log("num1"+"num2")//num1num2
+		console.log("num1+num2")//num1+num2
+
+		console.log(`${num1}+${num2}`);//100+200
+		console.log(`${num1}`+`${num2}`);//100200
+		// console.log(${num1}+${num2});//error
+		console.log(`${num1+num2}`);//300
+		console.log(typeof `${num1+num2}`);//string
+
+
+		//Overwrite	/ Override
+
+		var num3 = 30;
+		var num4 = 40;
+
+		console.log("num3 value is = "+num3);//num3 value is = 30
+		console.log(`num4 value is = ${num4}`);//num4 value is = 40
+		console.log(num3+num4);//70
+
+		num3=50;
+
+		console.log("num3 value is = "+num3);//num3 value is = 50
+		console.log(num3+num4);//90
+
+		var num4 = 60;
+
+		console.log("num4 value is = "+num4);//num3 value is = 60
+		console.log(num3+num4);//110
+
+	
+
+		let num5 =50;
+		console.log("num5 value is = "+num5);//50
+
+		num5 =500;
+		// let num5 = 100;//error no need to declare again
+		console.log("num5 value is = "+num5);//500
+
+		num5 =500;
+		console.log("num5 value is = "+num5);//5000
+
+		//can't overwrite in const =>constant value
+		const num6 =60;
+		console.log("num6 value is = "+num6);//60
+
+
+
+
+		//Special Escape Characters ( \ )
+		console.log("Hay i am working. do you see now.");//Hay i am working. do you see now.
+
+		console.log("Hay i am 'working.' do you see now.");//Hay i am 'working.' do you see now.
+		console.log('Hay i am "working." do you see now."');//Hay i am "working."" do you see now.
+
+
+		//console.log("Hay i am "working." do you see now.");//error
+		//console.log('Hay i am 'working.' do you see now.');//error
+
+		console.log("Hay i'm working and i'm reading. do you see now.");//'Hay i am 'working.' do you see now.'
+
+		let z = 'He is U Ba';
+		let w = "He is my \"uncle\"";
+		let u = 'She\'s also my daughter';
+
+		console.log(`${z} ${w} ${u}`);
+
+
+
+
+	</script>
+
+
+</body>
+</html>
+
+
+
+
+<!-- 
+string datatype "" '' ``
+number datatype 
+boolean datatype
+
+
++
+(num+num) 			calculate
+(string+string) 	concat
+(num+string)		concat
+
+
+Variable
+	
+	We can use => letter,number,_,$
+
+	eg: let firstname= "aung kyaw";  //standard (recommend)
+		let FirstName
+		let first_name
+		let $firstname
+
+		let num1	//recommend to use 
+
+
+	We cannot use => 
+
+	eg: let first name
+		let first-name
+		let @firstname
+		let 2firstname
+
+var         
+let 
+const 
+	
+ -->

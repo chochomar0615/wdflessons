@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arithmetic Operator</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		//Group Variable Declaration
+
+			// let num1;//undefined
+			// var num2;//undefined
+
+			// const num3; //error
+
+		// var num1 =10;
+		// var num2 =20;
+		// var num3 =30;
+		// console.log(num1,num2,num3);//10 20 30
+
+		// var num1,num2,num3;
+
+		// 	num1 = 100;
+		// 	num2 = 200;
+		// 	num3 = 300;
+
+		// console.log(num1,num2,num3);//100 200 300
+
+		// var num1=num2=num3=200;
+			// num1 = 50;
+			// num2 = 100;
+		// console.log(num1,num2,num3);//200 200 200
+
+		// -------------------------------
+
+
+		// let num1 =10;
+		// let num2 =20;
+		// let num3 =30;
+		// console.log(num1,num2,num3);//10 20 30
+
+		// let num1,num2,num3;
+
+		// 	num1 = 100;
+		// 	num2 = 200;
+		// 	num3 = 300;
+
+		// console.log(num1,num2,num3);//100 200 300
+
+		// let num1=num2=num3=200;
+			// num1 = 50;
+			// num2 = 100;
+		// console.log(num1,num2,num3);//200 200 200
+
+		//-----------------------------------
+
+
+		// const num1 =10;
+		// const num2 =20;
+		// const num3 =30;
+		// console.log(num1,num2,num3);//10 20 30
+
+		//due to const cannot use overwrite rule
+
+		// const num1,num2,num3;
+
+		// 	num1 = 100;
+		// 	num2 = 200;
+		// 	num3 = 300;
+
+		// console.log(num1,num2,num3);//100 200 300
+
+		const num1=num2=num3=200;
+			//like num1 is only const,the other num2 & num3 is not like const
+
+			// num1 = 1000; //error due to num1 overwrite
+			num2 = 500;
+			num3 = 400;
+			num3 = 600;
+			num2 = 528;
+		console.log(num1,num2,num3);//200 528 600
+		
+
+		//-------------------------------
+
+		let x,y,z;  //better to use
+
+			x=40,
+			y=50,
+			z=60;
+
+		console.log(x,y,z);
+
+
+		// const x=4,
+		// 	  y=5,
+		// 	  z=6;
+
+		// 	  y=20; //error
+
+		// console.log(x,y,z);
+
+		document.write("Adding Result is = "+ ( x + y ) +"<br/>");
+		document.write("Substration Result is = " +(z-y) +"<br/>");
+		document.write("Multiplication Result is = " +(z*y) +"<br/>");
+		document.write("Power Result is = " +(2**6) +"<br/>");
+		document.write("Division Result is = " +(y/5) +"<br/>");
+		document.write("Reminder Result is = " +(y%6) +"<br/>");
+
+		//------------------------------------------------------------------------
+
+		//Increment
+
+		let p=10;
+
+		document.write("<br/>Increment Result After PrintOut  = " +p+"<br/>");//10
+		document.write("Increment Result After PrintOut  = " +(p++)+"<br/>");//10
+		document.write("Increment Result After PrintOut  = " +(p++)+"<br/>");//11
+		document.write("Increment Result After PrintOut  = " +p+"<br/>");//12
+		document.write("Increment Result After PrintOut  = " +p+"<br/>");//12
+		document.write("Increment Result After PrintOut  = " +(p++)+"<br/>");//12
+		document.write("Increment Result After PrintOut  = " +(p)+"<br/>");//13
+
+		let q=20;
+
+		document.write("<br/>Increment Result After PrintOut  = " + (q) +"<br/>");//20
+		document.write("Increment Result After PrintOut  = " + (++q) +"<br/>");//21
+		document.write("Increment Result After PrintOut  = " + (++q) +"<br/>");//21
+		document.write("Increment Result After PrintOut  = " + q +"<br/>");//21
+		document.write("Increment Result After PrintOut  = " + (++q) +"<br/>");//22
+		document.write("Increment Result After PrintOut  = " + (++q) +"<br/>");//23
+		document.write("Increment Result After PrintOut  = " + (q) +"<br/>");//23
+
+		//-------------------------------------------------------------------------
+
+		//Decrement 
+
+		let w=30;
+
+		document.write("<br/>Decrement Result After PrintOut  = " + w +"<br/>");//30
+		document.write("Decrement Result After PrintOut  = " +(w--)+"<br/>");//30
+		document.write("Decrement Result After PrintOut  = " +(w--)+"<br/>");//29
+		document.write("Decrement Result After PrintOut  = " + w +"<br/>");//28
+		document.write("Decrement Result After PrintOut  = " + w +"<br/>");//28
+		document.write("Decrement Result After PrintOut  = " +(w--)+"<br/>");//28
+		document.write("Decrement Result After PrintOut  = " +(w)+"<br/>");//27
+
+		let t=50;
+
+		document.write("<br/>Decrement Result After PrintOut  = " +t+"<br/>");//50
+		document.write("Decrement Result After PrintOut  = " +(t)+"<br/>");//50
+		document.write("Decrement Result After PrintOut  = " +(--t)+"<br/>");//49
+		document.write("Decrement Result After PrintOut  = " +(--t)+"<br/>");//48
+		document.write("Decrement Result After PrintOut  = " +t+"<br/>");//48
+		document.write("Decrement Result After PrintOut  = " +(--t)+"<br/>");//47
+		document.write("Decrement Result After PrintOut  = " +(t)+"<br/>");//47
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+<!-- 
+Arithmetic Operators
++	adding
+-	subtraction
+*	multiplication
+/	division
+%	reminder(modulus)
+
+++	increasement(before/after)
+-- 	decreasement(before/after)
+ -->

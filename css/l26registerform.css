@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+
+:root{
+	--wc:#f4f4f4;
+	--gyc:#777;
+	--dbc:darkblue;
+	--org:orange;
+	---gnc:green;
+}
+
+
+	*{
+		box-sizing: border-box; /* //justify box-sizing of left&right*/
+
+/*		font-family: "Stick", sans-serif;*/
+	}
+
+body{
+	/* viewport height(vh) also have (wh) */
+/*	myin kwin ka nay 100 height a twin mhr chain py tr*/
+
+/*	font-family: "Stick", sans-serif;*/
+	
+	height: 100vh;
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.container{
+	font-family: "Stick", sans-serif;
+
+	width:480px;
+	background-color:var(--wc);
+
+/*				h v b c*/
+	box-shadow:0 2px 15px rgba(0,0,0,0.3);
+	
+}
+
+.container h2{
+	text-align: center;
+}
+
+.container form{
+/*			top&bottom left&rignt*/
+	padding: 30px 40px;
+}
+
+.form-group{
+	margin-bottom : 30px ;
+
+}
+
+
+.form-group label{
+	display: block;
+	color:var(--gyc);
+	margin-bottom: 5px;
+}
+
+.form-group .form-control{
+	width:100%;
+	padding:10px;
+
+	font-family: "Stick", sans-serif;
+}
+
+
+.form-group .form-control::placeholder{
+	color:rgba(0,0,0,0.3);
+
+}
+
+
+form .btn{
+	font-family: inherit;
+
+	width:100%;
+	padding: 10px;
+	background-color: var(--dbc);
+	color:white;
+	font-size:16px;
+
+	border:none;
+	border-radius:5px;
+
+	cursor: pointer;
+
+	padding: 10px;
+
+	transition: background-color .5s;
+}
+
+form .btn:hover{
+	background-color: var(--org);
+}
+
+form .btn:active{
+	background-color: var(---gnc);
+}
+
+
+
+/*	if you give font-family:"Stick", sans-serif; at the parent block , 
+	you can use the child of that like this syntax*/
+
+/*	but if you give inherit of +++	width +++  , take use one step seperated  */
+/*	font-family: inherit;   */
+
+
+/* 10RG  */

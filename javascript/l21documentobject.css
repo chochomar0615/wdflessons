@@ -1,0 +1,110 @@
+*{
+	box-sizing : border-box;
+}
+
+body{
+	
+	height: 100vh;
+	background: #f2f2f2;
+
+	display: grid;
+	place-items: center;
+}
+
+.container{
+	width: 400px;
+	background: #fff;
+	box-shadow : 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.container .card{
+	padding: 30px 40px;
+}
+
+.card h3,.card h4{
+	font-family: "Courier New";
+	color: darkseagreen;
+
+	font-size: 28px;
+	letter-spacing: 2px;
+
+	text-align: center;
+	text-shadow: 2px 2px 2px green;
+}
+
+.form-group{
+	margin-bottom: 20px;
+}
+
+.form-group label{
+	display: block;
+	color: #777;
+
+	margin-bottom: 5px;
+}
+
+.form-group .form-control{
+	width : 100%;
+	padding: 10px;
+	border:none;
+
+	border-bottom: 2px solid #999;
+}
+
+.form-group .form-control:focus{
+	outline : none;
+
+	border-bottom : 1px solid blue;
+}
+
+.form .btn{
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	background: blueviolet;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 80%;
+	padding: 10px;
+}
+
+.card .card-footer{
+
+	margin: 20px 0;
+	border-top : 1px dashed #000;
+	border-bottom : 1px dashed #000;
+}
+
+.card-footer .list-group{
+	list-style-type: none;
+	padding : 0;
+	margin: 0;
+}
+
+.list-group .list-group-item{
+	display: flex;
+	justify-content: space-between;
+
+	line-height: 30px;
+}
+
+.delete-item{
+	color: red;
+}
+
+.clear-tasks{
+	background: blue;
+	text-decoration: none;
+
+	color: black;
+	padding: 3px 5px;
+}
+
+.card .moretasks{
+	text-align: center;
+	margin-top : 30px;
+}
+.moretasks .loading{
+	width: 60px;
+} 

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RegularFunction</title>
+
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+
+		.container{
+
+			width : 300px;
+			background: #f4f4f4;
+			padding: 10px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+
+		label{
+			display: block;
+			margin: 10px 0;
+		}
+
+		.form-control{
+			width: 100%;
+			padding: 5px;
+		}
+
+		.btn{
+			width: 100%;
+			background: darkblue;
+			color:#fff;
+			font-size: 16px;
+			border: none;
+
+			padding: 5px;
+			margin-top: 10px;
+		}
+
+
+
+
+	</style>
+</head>
+
+<body>
+
+
+	<div class="container">
+		<h3>Show Name = <span id="replacename"></span></h3>
+
+		<form action="" method="">
+
+			<div class="form-group">
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="fname" class="form-control" autofocus />
+
+			</div>
+
+			<div class="form-group">
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" />
+
+			</div>
+
+			<button type="button" class="btn" onclick='getdata()'>Get Name
+			</button>
+
+		</form>
+	</div>
+
+
+
+
+
+	<script type="text/javascript">
+
+		// (A) Default Function | System Function
+		// (B) User Define Function
+				//(1) Regular Function
+						//(i)Manual Parameter Function
+						//(ii) Multi Parameter Function
+							//(a) Single Parameter Function
+							//(b) Multi Parameter Function
+
+				//(2) Arrow Function
+						//(i)Manual Parameter Function
+						//(ii) Multi Parameter Function
+							//(a) Single Parameter Function
+							//(b) Multi Parameter Function
+
+				//(3) Generator Function
+
+
+		// function name(){
+		// 	console.log("jeoijr");
+		// }
+		// name(); //function invoke; function recall
+
+		function hello(){
+			console.log("How are you?");
+			console.log("I am glad to see you.");
+			console.log("Today weather is fine.");
+		}
+		hello();
+		hello();
+		hello();
+
+		function hello(){
+			console.log("How are you?");
+		}
+		hello();
+
+		
+
+		greet(); // My name is cho gyi
+
+		function greet(){
+			console.log("My name is cho mar");
+		}
+
+		greet(); //My name is cho gyi (overwrite , declare before create then use)
+
+		function greet(){
+			console.log("My name is cho gyi");
+		}
+
+		greet();
+
+
+		function funone(){
+			console.log("i am fucntion one");
+		}
+
+		function funtwo(){
+			funone();
+			console.log("i am function two");
+		}
+
+		function funthree(){
+			funone();
+			funtwo();
+			console.log("i am function three");
+		}
+
+		funthree();
+
+		function funtree(){
+			funone();
+			console.log("i am function three");
+			funtwo();
+			
+		}
+
+		funtree();
+//---------------------------------------------------------------------------------
+
+
+		//RETURN
+
+		function four(){
+			console.log(4);
+		}
+
+		function fice(){
+			console.log(5);
+		}
+
+		four();
+		fice();
+
+		function six(){
+			return 6;
+			return 7; //useless
+			return 8; //useless
+
+		}
+
+		six();
+
+
+		function seven(){
+			const num4 = four();
+			const num5 = fice();
+
+			//console.log(num4);
+			//console.log(num5);
+
+			const total = num4 +num5;
+			console.log(total);
+		}
+
+		seven();
+
+		function eight(){
+			// return 6;
+			// return 7;
+			// return 8;
+
+				//return 9,10; // <do not have to use/write>
+
+			var p= 50;
+			var q= 100;
+
+				//var result= p+q;
+				//return result;
+
+			if(p>q){
+				return true;
+			}
+			else{
+				return false;
+			}
+
+
+		}
+
+		console.log(eight());
+
+
+		function nine(){
+			// const msg1= "nay kaung lar";
+			// const msg2= "sar pp p lar";
+			// const msg3= "Mi lar lar";
+
+			// return "block";
+
+			// // => do s
+
+			//  const num9= 30;
+			//  return num9; //30
+
+			 // const numnine;
+			 // return numnine = 50; //50
+
+			 // => don't
+
+			 // return var numnie; //error
+
+			 // return var numnie = 20000; //error
+		}
+
+		console.log(nine());
+
+
+
+
+		function tena(){
+			return 90;
+
+		}
+
+		function tenb(){
+			numb =100;
+			return numb;
+		}
+
+		console.log(tena());
+		console.log(tenb());
+
+		function eleven(){
+			const num1 = tena();
+			const num2 = tenb();
+
+			const sum= num1+ num2;
+			console.log(sum);
+		}
+
+	eleven();
+
+//---------------------------------------------------------------------------------
+	//(ii) Parameter Function
+
+		//(i) Single Parmeter
+
+	function myfun1(city){
+		console.log("Hello" + city);
+	}
+	myfun1();
+	myfun1("Yangon");
+	myfun1("Mandalay");
+	myfun1("Mdy","Bahan");
+	myfun1(500);
+
+	// Default Parameter
+
+	function myfun2(country="Thailand") {
+		console.log(`Hello ${country}`);
+	}
+
+	myfun2();
+	myfun2("Indonisia");
+	myfun2("Japan");
+	myfun2();
+
+//--------------------------------------------------------------------------------
+	//(ii) Parmeter Function
+			//(b) Multi Parmeter Function
+
+	function multifun1(x,y,z){
+		console.log(`x value is ${x}, y value is ${y}, z value is ${z}`);
+	}
+
+	multifun1(); //undefined
+	multifun1(1,2,3);
+	multifun1(10,20,30);
+	multifun1(10,20,30,40,50);
+
+	function multifun2(x=1,y=2,z=3){
+		console.log(`x value is ${x}, y value is ${y}, z value is ${z}`);
+	}
+
+	//x value is 1, y value is undefined,z values is undefined if you are not assigned in fuction
+	multifun2(1); 
+
+	multifun2();
+	multifun2(6);
+	multifun2(5,9);
+	multifun2(50,90,30);
+	//multifun2(5,,9); //error
+
+	function multifun3(a=2,b=3,c=5){
+		const sum=a+b+c;
+		return sum;
+	}
+
+	console.log(multifun3());
+	console.log(multifun3(20,20));
+
+//--------------------------------------------------------------------------------
+
+
+	//Nameless function, Annonemous Function
+
+		const abcd= function (name,age){
+			console.log(`My name is ${name}, I am ${age} year old.`);
+		};
+
+		abcd("Cho Mar",24);
+
+//---------------------------------------------------------------------------
+
+		// function for built-form 
+
+		function getdata(){
+			//console.log("helo");
+		
+
+		// getdata();
+
+		const getfirstname= document.getElementById('fname').value;
+		const getlastname= document.getElementById('lastname').value;
+
+		//console.log(getfirstname);
+			//console.log(getlastname);
+
+		const getreplacename= document.getElementById('replacename');
+		//console.log(getreplacename);
+
+		getreplacename.innerText= `${getfirstname} ${getlastname}`;
+		// getreplacename.innerHTML= `${getfirstname} ${getlastname}`;
+		// getreplacename.textContent= `${getfirstname} ${getlastname}`;
+
+
+		document.getElementById('fname').value="";
+		document.getElementById('lastname').value="";
+
+		document.getElementById('fname').focus();
+
+		}
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+<!-- 8FN -->

@@ -1,0 +1,172 @@
+.circle1,.circle2,.circle3,.circle4,.circle5{
+	width:200px;
+	height: 200px;
+	border-radius:50%;
+}
+
+
+.circle1{
+/*	background-image: conic-gradient(orange,violet,pink,steelblue);*/
+
+/*	background: conic-gradient(orange,violet,pink,steelblue);*/
+	background: conic-gradient(orange,violet,pink,steelblue);
+}
+
+
+.circle2{
+		background: conic-gradient(
+			#22d4e0,
+			#46d611,
+			#e80ccb,
+			#f3f705);
+}
+
+
+.circle3{
+	background: conic-gradient(
+		rgba(73, 89, 145, 0.8),
+		rgba(11, 185, 96, 0.61),
+		rgba(254, 26, 123, 1),
+		rgba(43, 254, 26, 1));
+}
+
+
+.circle4{
+		background: conic-gradient(
+			hsla(18, 100%, 44%, 1),
+			hsla(257, 100%, 50%, 1),
+			hsla(244, 100%, 31%, 1),
+			green);
+}
+
+
+.circle5{
+	/* unlike linear-gradient , we cannot write degree in conic-gradient	*/
+	background: conic-gradient(
+		red 33%,
+		blue 0% 66%,
+		green 0%
+		);
+}
+
+.circle6{
+	width:200px;
+	height:200px;
+	background:linear-gradient(
+				45deg,
+				red 20%,
+				green 0% 30%,
+				blue 0% 50%,
+				violet 0%);
+
+}
+
+
+.boxone{
+	width:600px;
+	height:300px;
+/*	background-color:green;*/
+
+	display: flex;
+
+		/* 	hz center*/
+		justify-content: center;
+
+		/*  vt center*/
+		align-items: center;
+
+
+/*	display:grid;
+	place-items:center;*/
+
+	position: relative;
+}
+
+.boxone .div1{
+	width:300px;
+	height:300px;
+/*	background:#000;*/
+	color:#fff;
+	border-radius: 50%;
+
+/*	background:linear-gradient(red,yellow);*/
+
+	background:conic-gradient(
+					red,
+					violet 30%,
+					red 0%,
+					blue 70%,
+					red 0%,
+					yellow 100%);
+
+	position: absolute;
+	/*left:0;
+	top:0;*/
+
+	z-index:1 ; 
+	/* default is 0  */ 
+}
+
+.boxone .div2{
+	width:270px;
+	height:270px;
+	background:black;
+	color:#fff;
+	border-radius: 50%;
+
+	position: absolute;
+	/*left:0;
+	top:0;*/
+
+	z-index:2;
+}
+
+
+
+.pointercontainer{
+	width:20px;
+	height:200px;
+	background: gray;
+
+	position: absolute;
+/*	top:-50px;*/
+
+	z-index: 3;
+
+	/* keyframes animation name */
+	animmation-name: exa;	
+	animation-duration: 5s;
+	animation-iteration-count: infinite; 
+	/* looping work */
+	animation-timing-function: linear; 
+	 /* 	circling fast */
+
+/*	transform-origin: bottom;*/
+}
+
+
+.pointer{
+	width:20px;
+	height:20px;
+	background: red;
+	border-radius:50%;
+
+	display:block;
+
+
+}
+
+
+@keyframes exa{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+
+/*3CG*/
+/*4AN*/
+/*5FA*/

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<script type="text/javascript">
+
+
+		let arrcolors = ["red", "green", 
+			"blue", "white", "black", "pink"];
+		console.log(arrcolors);
+		console.log(arrcolors.length);
+		console.log(arrcolors[3]);
+
+		//indexOf(value)
+
+		console.log(arrcolors.indexOf('black'));
+		console.log(arrcolors.indexOf('Black'));
+		console.log(arrcolors.indexOf('orange')); //orange donot have in arrcolors so come out -1
+
+		//Array.isArray(array)
+
+		const name = "aung aung";
+		console.log(Array.isArray(name)); //false
+		console.log(Array.isArray(arrcolors));//true
+
+		//join('delimitor')
+
+		console.log(String(arrcolors));
+		console.log(arrcolors.toString());
+		console.log(arrcolors.join()); //change array to String
+		console.log(arrcolors.join(""));
+		console.log(arrcolors.join(" "));
+		console.log(arrcolors.join("-"));
+		console.log(arrcolors.join("*"));
+
+const candies = ["red", "green", "pink", "white", "yellow", "black"];
+	candies[6] = "pupple";
+	candies [0] ="orange";
+
+	console.log(candies);
+	console.log(candies.length);
+
+	//push(value) ; Note :: Add new value to array added to the end
+	candies.push("gold");
+	candies.push("skyblue");
+	candies.push("violet", "gray");
+
+	console.log(candies);
+	console.log(candies.length);
+
+	//unshift(value)
+	candies.unshift("tamato");
+	candies.unshift("green");
+	candies.unshift("silver", "steelblue");
+
+	console.log(candies);
+	console.log(candies.length);
+
+	//shift() ; Note :: Remove value & index(take of from end)
+
+	candies.shift();
+	candies.shift();
+
+	console.log(candies);
+	console.log(candies.length);
+
+	//pop() ; Note :: Remove value & index(take of from end)
+	candies.pop();
+	candies.pop();
+
+	console.log(candies);
+	console.log(candies.length);
+
+	//delete (Remove only value but can overwrite in that deleted value cuz index left) 
+
+	delete candies[1];
+	delete candies[2];
+
+	console.log(candies);
+	console.log(candies.length);
+
+	//callback function
+	console.log(arrnumbes.sort(function(u,m){
+		return u-m;//u to m(small to large sort) // 0 to 1 2 3.....
+	}));
+
+	console.log(arrnumbes.sort(function(a,b){
+		return b-a;//this is reverse //  ....3 2 1 to 0
+	}));
+
+
+
+	</script>
+</body>
+</html>

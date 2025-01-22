@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Function</title>
+
+	<style>
+		
+		*{
+			box-sizing:border-box;
+
+		}
+
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container{
+			width: 300px;
+			background: #f4f4f4;
+
+			padding : 10px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+
+		label{
+			display: block;
+			margin: 10px 0;
+		}
+
+		.form-control{
+			width: 100%;
+
+			padding: 5px;
+		}
+
+		.btn{
+			width: 100%;
+
+			background: darkblue;
+
+			color: #fff;
+			font-size: 16px;
+
+			border: 0;
+
+			padding: 5px;
+			margin-top: 10px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<h3>Show Name = <span id="replacename"></span></h3>
+
+		<form action="" method>
+			
+			<div class="form-group">
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus />
+			</div>
+
+
+			<div class="form-group">
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" />
+			</div>
+
+			<button type="button" class="btn" onclick="getdata()">Get Name</button>
+
+		</form>
+	</div>
+	
+
+	<script type="text/javascript">
+		
+		//  (A) Default Function | System Function
+
+		//  (B) User Define Function
+				// (1) Regular Function
+						// (a) Manual Function
+						// (b) Parameter Function
+						// 		(i) Single Parameter
+						//		(ii) Multi Parameter
+				// (2) Arrow Function
+						// (a) Manual Function
+						// (b) Parameter Function
+						// 		(i) Single Parameter
+						// 		(ii) Multi Parameter
+				// (3) Generator Function
+
+
+		// function name(){
+		// 	code to be executed
+		// }
+
+		// name();	//function invoke / function recall
+
+
+		function greet(){
+			console.log("hello Myanmar");
+		}
+
+		greet();
+
+
+		hello();  //hello goodmorning ,hello evening
+		function hello(){
+			console.log("hello goodmorning");
+		}
+
+		hello();  //hello goodmorning ,hello evening
+
+		function hello(){
+			console.log("hello evening");
+		}
+
+		// hello(); //hello evening
+
+		function one(){
+			console.log(4);
+		}
+
+		// one();
+
+		function two(){
+			console.log(5);
+		}
+
+		// two();
+
+		// function three(){
+		// 	one();
+		// 	two();
+		// }
+
+		// three();
+
+		// function four() {
+		// 	const num1 = one();
+		// 	const num2 = two()
+
+		// 	console.log(num1,num2);
+		// }
+
+		// four();
+
+
+		function five() {
+			const num1 = one();
+			const num2 = two()
+
+			const result = num1 + num2;
+
+			console.log(result);// NAN => not a number
+		}
+
+		five();
+
+
+
+		function six(){
+			// return 6;
+			// return 7;
+			// return 8;
+
+			// const resultno = 10+20+-10*2/5;
+			// return "hello taxi";
+			// return resultno;
+
+			var p = 10;
+			var t = 10;
+			var q = 20;
+
+			// var getresult = p+q;
+
+			// return getresult;
+
+			if(p < q){
+				return "less than q";
+			}else{
+				return "greater than q";
+			}
+		}
+
+		console.log(six());
+
+		function seven(){
+			// const msg1 = "hi";
+			// const msg2 = "nay kaung lar ??";
+			// const msg3 = "sarr p p lar ??";
+			// const msg4 = "mee larr larr";
+
+			// return "block";
+
+			// =>dos
+
+			// const num8 = 800;
+			// return num8;
+
+			var num9;
+			return num9 = 9000;
+
+			//don't 
+
+			// return var num8;
+
+			// return var num8 = 1000;
+
+		}
+
+		console.log(seven());
+
+
+		function eight(){
+
+			return 90;
+		}
+
+		function nine(){
+
+			const x =900;
+			return x;
+		}
+
+		console.log(eight());
+		console.log(nine());
+
+		function ten(){
+
+			const num9 = eight();
+			const num10 = nine();
+
+			// console.log(num9); //90
+			// console.log(num10); //900
+
+			const total = num9 + num10;
+			console.log(total);
+		}
+
+		ten();
+
+		//----------------------------------------------------------------------
+
+		// (b) Parameter Function
+				// 	(i) Single Parameter
+				
+
+			function myfun1(city){
+				console.log("Hello " + city);
+			}
+
+			myfun1("Yangon"); //Hello Yangon
+			myfun1("Mandalay"); //Hello Mandalay
+			myfun1("MayMyo","Taunggyi");//Hello MayMyo
+			myfun1(500);//Hello 500
+
+
+			//Default Parameter
+
+			function myfun2(country = "indonesia"){
+				// console.log("Hello " +country);
+				console.log(`Hello ${country}`);
+			}
+
+			myfun2();//Hello indonesia
+			myfun2("Myanmar");//Hello Myanmar
+			myfun2();//Hello indonesia
+
+	//-------------------------------------------------------------------------
+		// (b) Parameter Function
+				//(ii) Multi Parameter
+
+		function multifun1(x,y,z){
+
+			console.log(`x value is ${x},y value is ${y}, z value is ${z}` );
+
+		}
+
+		multifun1(10,20,30);//x value is 10,y value is 20, z value is 30
+		multifun1(10,30);//x value is 10,y value is 30, z value is undefined
+		multifun1(10);//x value is 10,y value is undefined, z value is undefined
+
+		//------------------------------------
+
+		function multifun2(r=100,t=150,p=200){
+
+			console.log(`r value is ${r},t value is ${t}, p value is ${p}` );
+
+		}
+
+		multifun2();//r value is 100,t value is 150, p value is 200
+		multifun2(22);//r value is 22,t value is 150, p value is 200
+		multifun2(33,44);//r value is 33,t value is 44, p value is 200
+		multifun2(55,66,77);//r value is 55,t value is 66, p value is 77
+		// multifun2(23,,83);//error
+
+
+		//---------------------------------
+
+		function multifun3(x=1,y=2,z=3){
+
+			const result = x+y+z;
+			return result;
+		}
+
+		console.log(multifun3());//6
+		console.log(multifun3(11,22));//36
+
+		//-------------------------------------------------------------------
+
+
+		//Nameless function , Anonymous function
+
+		const infofun = function (name,color){
+			console.log( `My name is ${name}, I wear ${color} shirt`);
+		};
+
+		infofun("ag ag" , "blue");//My name is ag ag, I wear blue shirt
+
+//-------------------------------------------------------------------------------------------
+
+
+		function getdata(){
+			// console.log("hello");
+
+			const getfirstname = document.getElementById("firstname").value;
+			const getlastname = document.getElementById("lastname").value;
+
+			// console.log(getfirstname,getlastname);
+
+			const getreplacename = document.getElementById("replacename");
+			// console.log(getreplacename);
+
+			// getreplacename.innerHTML= `${getfirstname} ${getlastname}`;
+			getreplacename.innerText= `${getfirstname} ${getlastname}`;
+			// getreplacename.textContent= `${getfirstname} ${getlastname}`;
+
+			document.getElementById("firstname").value='';
+			document.getElementById("lastname").value='';
+
+			document.getElementById("firstname").focus();
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

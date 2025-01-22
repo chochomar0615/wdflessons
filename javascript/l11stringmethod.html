@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Method</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+	
+		let firstname = "Mya Hnin";
+		let lastname = " Yee Lwin";
+
+		console.log(firstname,lastname);//Mya Hnin Yee Lwin
+		console.log(firstname.length);//8
+		console.log(lastname.length);//8
+
+
+		// Concat (+)
+
+		let fullname = firstname+ " " +lastname;//Mya Hnin  Yee Lwin
+		console.log(fullname);
+
+		// => concat (string)
+
+		console.log(firstname.concat(lastname));//Mya Hnin Yee Lwin
+		console.log(lastname.concat(firstname));// Yee Lwin Mya Hnin 
+
+		//Append( += )
+
+		let name1 = 'Honey Nway';
+		let name2 = 'Oo';
+
+		console.log(name1+name2);//Honey NwayOo
+		console.log(name1.concat(name2));//Honey NwayOo
+
+		name1 += name2;
+		console.log(name1);//Honey NwayOo
+
+		let num1 = 20;
+		let num2 = 30;
+
+		// num1 = num2;
+		// console.log(num1);//20
+
+		// num = num1+num2; //method A
+		// console.log(num);
+
+		num1 += num2; //method B
+		console.log(num1);
+
+
+		// String is Character Array in JavaScript
+
+		let myfriend = 'Aung Ko Ko';
+
+		console.log(myfriend);
+		console.log(typeof myfriend);//string
+		console.log(myfriend.length);//10
+
+		console.log(myfriend[0]);//A
+		console.log(myfriend[3]);//g
+		console.log(myfriend[4]);//space
+		console.log(myfriend[myfriend.length-1]);//o
+
+		// charAt()
+
+		const nickname = "Aung Kyaw Kyaw";
+
+		console.log(nickname);
+		console.log(nickname.length);//14
+
+		console.log(nickname[5]);//K
+		console.log(nickname.charAt(5));//K
+									//14-5 = 9  => index[9]
+		console.log(nickname.charAt(nickname.length-5));//space
+
+		// repeat()
+
+		const greeting = "Hello hihi ";
+		console.log(greeting);
+		console.log(greeting.repeat(5));
+
+
+		// includes(string)  =>case sensitive
+
+		let favcolor = "My fav color is black color";
+		console.log(favcolor.includes("black"));//true
+		console.log(favcolor.includes("black"));//true
+		console.log(favcolor.includes("Black"));//false 
+		console.log(favcolor.includes("BLACK"));//false
+		console.log(favcolor.includes("bla"));//true
+
+
+
+		// replace(old,new)   => case sensitive
+
+		console.log(favcolor.replace("black","red"));//My fav color is red color
+		console.log(favcolor.replace("BLACK","red"));//My fav color is black color
+		console.log(favcolor.replace("Black","red"));//My fav color is black color
+		console.log(favcolor.replace("bla","red"));//My fav color is redck color
+		console.log(favcolor.replace("color","colour"));//My fav colour is black color
+
+
+		//startsWith(string)
+		//startsWith(string,index)
+
+		const sayhi ="Helloo my fri";
+		console.log(sayhi.startsWith("Helloo"));//true
+		console.log(sayhi.startsWith("helloo"));//false
+		console.log(sayhi.startsWith("Helloo"));//true
+		console.log(sayhi.startsWith("h"));//false
+
+		console.log(sayhi.startsWith("Helloo",0));//true
+		console.log(sayhi.startsWith("ll",2));//true
+		console.log(sayhi.startsWith("LL",2));//false
+		console.log(sayhi.startsWith("yo",0));//false
+
+		//endsWith(string)
+		//endsWith(string,length)
+
+		//length       13
+		const saybye ="Helloo my fri";
+		console.log(saybye.length);//13
+		// console.log(saybye.endsWith("fri"));//true
+		// console.log(saybye.endsWith("ri"));//true
+		// console.log(saybye.endsWith("Ri"));//false
+		// console.log(saybye.endsWith("i"));//true
+		// console.log(saybye.endsWith("I"));//false
+
+		// console.log(saybye.endsWith("i",saybye.length));//true
+		//console.log(saybye.endsWith("r",saybye.length-1));//true
+	console.log(saybye.endsWith("m",saybye.length-5));//true  //8th words=>start count from 1
+	console.log(saybye.endsWith("y",saybye.length-4));//true  //9th words=>start count from 1
+
+
+		const yousay = "hello aung aung";
+
+		if(yousay.startsWith("dear")){
+			var isay = "hi kyaw kyaw";
+		}
+
+		console.log(`You say ${yousay}, I say ${isay}`);
+
+
+		const wesay = "hello aung aung";
+
+		if(wesay.startsWith("hello")){
+			var hesay = "hi kyaw kyaw";
+		}
+
+		console.log(`We say ${yousay}, He say ${hesay}`);
+
+
+		//substring(index,length)
+
+
+		console.log(favcolor.substring(1,10));//y fav col
+		console.log(favcolor.substring(0,10).concat("-/-/-"));//My fav col-/-/-
+
+		//Change Case
+
+		console.log(favcolor.toLowerCase());//my fav color is black color
+		console.log(favcolor.toUpperCase());//MY FAV COLOR IS BLACK COLOR
+		
+		
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

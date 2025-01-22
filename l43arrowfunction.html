@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+		// (A) Default Function | System Function
+		// (B) User Define Function
+				//(1) Regular Function
+						//(i)Manual Parameter Function
+						//(ii) Multi Parameter Function
+							//(a) Single Parameter Function
+							//(b) Multi Parameter Function
+
+				//(2) Arrow Function
+						//(i)Manual Parameter Function
+						//(ii) Multi Parameter Function
+							//(a) Single Parameter Function
+							//(b) Multi Parameter Function
+
+				//(3) Generator Function
+
+		// (1) Regular Function
+
+		const regfun1 =function (){
+			const num1=5;
+			const num2=6;
+
+				const sum1=num1+num2;
+			return sum1;
+		};
+		console.log("this is regfun1 =" + regfun1());
+
+		// (2) Arrow Function (ECMA 6)//9AR
+
+			const arrfun1 = ()=>{
+			const numa=50;
+			const numb=60;
+
+			const sum2=numa+numb;
+			return sum2;
+		};
+		console.log("this is arrfun1 = "+ arrfun1());
+
+//-------------------------------------------------------------------------
+
+		//(ii) Parameter Function
+			//(a) Single Parameter
+
+		const arrfun2 = (num1)=>{
+			return num1;
+		}
+		console.log('this is arrfun2 =',arrfun2(20));
+
+		const arrfun3 = num1=>{
+			return num1;
+		}
+		console.log("This is arrfun3 = ", arrfun3(30));
+
+		const arrfun4 = num1 =>num1+40
+		console.log("This is arrfun4 =",arrfun4(40));
+
+
+
+		//(ii) Parameter Function
+			//(a) Multi Parameter function
+
+		const multiarrfun1 = (num1,num2)=>{
+			const result = num1+num2;
+			return result;
+		}
+
+		console.log("this is multiarrfun1 = ",multiarrfun1()); //NAN
+		console.log("this is multiarrfun1 = ",multiarrfun1(20,30)); //50
+
+		const multiarrfun2 = (num1=100,num2=300,num3=400)=>{
+			const result =num1+ num2 + num3;
+			return result;
+		}
+
+		console.log("this is multiarrfun2 = ",multiarrfun2());
+		console.log("this is multiarrfun2 = ",multiarrfun2(200));
+		console.log("this is multiarrfun2 = ",multiarrfun2(200,200));
+		console.log("this is multiarrfun2 = ",multiarrfun2(200,100,100));
+
+		const multiarrfun3 = (num1=100,num2=300,num3=400) =>num1+num2+num3
+		console.log("This is multiarrfun3 =",multiarrfun3(40));
+		console.log("This is multiarrfun3 =",multiarrfun3(100,20));
+
+		
+
+	</script>
+</body>
+</html>

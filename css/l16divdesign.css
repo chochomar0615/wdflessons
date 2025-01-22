@@ -1,0 +1,113 @@
+.fivdiv{
+	width:300px;
+	height:300px;
+
+		background:url("./../img/cover/img1.jpg"),linear-gradient(
+								red,
+								green,
+								yellow
+					  );
+
+	background-repeat:no-repeat;
+	background-position:center;
+
+	border:3px dotted blue;
+
+}
+
+
+.secdiv{
+	width:300px;
+	height:300px;
+
+/*	background-color:green; */
+	background-image:url("./../img/cover/img1.jpg");
+
+
+/*	background:green;*/
+
+	background-repeat:no-repeat;
+	background-position:center;
+
+	color:blue;
+	font-size:30px;
+	border:4px dashed red;
+
+}
+
+
+
+/*	background-color  : 	solidcolor 
+	background        :		solidcolor 	image 	linear-gradient
+	background-image  :					image   linear-gradient
+*/
+
+
+
+.thirddiv{
+	width:300px;
+	height:300px;
+
+/*can solid color*/
+/*	background-color:red;*/
+
+
+/*  image , solidcolor , gradient */
+/*	background:linear-gradient(red,yellow);*/
+
+/*  image , gradient */
+
+	background-image:url("./../img/cover/img1.jpg");
+/*	background-image:linear-gradient(rgba(109, 155, 97, 0.8),hsla(324, 100%, 50%, 1));*/
+/*	background-image:linear-gradient(red,violet,silver);*/
+
+/*	background:linear-gradient(
+									45deg, // must write first row 	
+									red,
+									green,
+									blue
+								);*/
+
+	background-repeat:no-repeat;
+	background-position:center;
+
+
+	color:#bbb;
+	font-size:40px;
+
+	border:5px double black;
+	border-radius:10px;
+
+}
+
+
+.fourdiv{
+	width:300px;
+	height:300px;
+
+/*	background-color:green;*/
+
+
+	background-image:url("./../img/cover/img2.jpg"),
+					  linear-gradient(
+								red,
+								green,
+								yellow
+					  );
+
+
+/*	background-image:linear-gradient(
+									135deg,
+									rgba(62, 155, 97, 0),
+									rgba(183, 55, 188, 1)
+									),
+					url("./../img/cover/img2.jpg");*/
+
+	background-repeat: no-repeat;
+	background-position:center;
+
+	color:#aaf;
+	font-size:40px;
+
+	border:3px solid green;
+}
